@@ -66,8 +66,9 @@ button{border:none;background:none;cursor:pointer;font:inherit}
 @media(max-width:900px){
  [data-nav-desktop]{display:none!important}
  [data-burger]{display:flex!important}
- [data-hero]{grid-template-columns:1fr!important}
- [data-hero-img]{min-height:340px!important}
+ [data-hero]{display:flex!important;flex-direction:column!important;min-height:auto!important}
+ [data-hero-img]{position:static!important;min-height:340px!important}
+ [data-hero-text]{position:static!important;max-width:none!important;min-height:auto!important;background:#f5efe2!important}
  [data-grid2]{grid-template-columns:1fr!important}
  [data-serv]{grid-template-columns:1fr!important}
  [data-about]{grid-template-columns:1fr!important}
@@ -121,9 +122,10 @@ button{border:none;background:none;cursor:pointer;font:inherit}
 </header>
 
 <section id="inicio" data-sec>
-  <div data-hero style="display:grid;grid-template-columns:1fr 1.12fr;min-height:clamp(500px,76vh,742px)">
-    <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(44px,6vw,84px) clamp(24px,5vw,74px);background:#f5efe2">
-      <h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.02;font-size:clamp(46px,6.4vw,92px);color:#5e1a24">Nourish your body.<br><span style="font-style:italic;font-weight:500;color:#6f7a4d">Nurture your life.</span></h1>
+  <div data-hero style="position:relative;min-height:clamp(500px,76vh,742px)">
+    <div data-hero-img style="position:absolute;inset:0;background:url('/assets/hero.png') center/cover no-repeat;min-height:300px"></div>
+    <div data-hero-text style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;max-width:640px;min-height:clamp(500px,76vh,742px);padding:clamp(44px,6vw,84px) clamp(24px,5vw,74px);background:linear-gradient(90deg,#f5efe2 0%,#f5efe2 58%,rgba(245,239,226,.9) 72%,rgba(245,239,226,0) 92%)">
+      <h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.02;font-size:clamp(32px,3vw,54px);color:#5e1a24">Nourish your body.<br><span style="font-style:italic;font-weight:500;color:#6f7a4d">Nurture your life.</span></h1>
       <div style="width:118px;height:1px;background:#c9b578;margin:clamp(24px,3vw,38px) 0"></div>
       <p style="font-family:'EB Garamond',serif;font-size:clamp(18px,1.5vw,23px);line-height:1.55;color:#4c4a40;max-width:30ch">Nutrition and health with clarity, calm and context.</p>
       <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:clamp(28px,3.4vw,42px)">
@@ -131,7 +133,6 @@ button{border:none;background:none;cursor:pointer;font:inherit}
         <a href="#servicios" data-hover="border-color:#5e1a24;color:#5e1a24" style="display:inline-flex;align-items:center;justify-content:center;background:transparent;color:#3c3b34;border:1px solid #b7a882;font-family:'Jost',sans-serif;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:15px 31px;border-radius:2px;transition:all .25s">View services</a>
       </div>
     </div>
-    <div data-hero-img style="background:url('/assets/hero.png') center/cover no-repeat;min-height:300px"></div>
   </div>
 </section>
 
