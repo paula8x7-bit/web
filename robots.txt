@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paularubionutricionista.com/sitemap.xml
