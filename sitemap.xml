@@ -18,4 +18,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/"/>
   </url>
+  <url>
+    <loc>https://paularubionutricionista.com/aviso-legal.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/aviso-legal.html"/>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/politica-privacidad.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/politica-privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/en/legal-notice.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/aviso-legal.html"/>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/en/privacy-policy.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/politica-privacidad.html"/>
+  </url>
 </urlset>
