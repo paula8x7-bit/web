@@ -74,6 +74,10 @@ button{border:none;background:none;cursor:pointer;font:inherit}
  [data-about]{grid-template-columns:1fr!important}
  [data-foot]{grid-template-columns:1fr 1fr!important}
  [data-foot-accent]{grid-column:1/-1!important;min-height:220px!important}
+ [data-guias]{min-height:auto!important}
+ [data-guias-img]{position:static!important;width:100%!important;height:180px!important;object-position:left center!important}
+ [data-guias-content]{position:static!important;min-height:auto!important;flex-direction:column!important;align-items:flex-start!important;padding:22px clamp(20px,5vw,32px)!important;background:#f5efe2!important}
+ [data-guias-content] a{margin-top:14px}
  [data-focusband]{flex-direction:column!important;justify-content:center!important;text-align:center!important}
  [data-focusband]>*{flex:none!important}
  [data-branch]{display:none!important}
@@ -271,7 +275,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
           <img src="/assets/serv-1.webp" alt="Consulta nutricional" style="width:100%;height:180px;object-fit:cover">
           <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
             <div style="display:flex;align-items:center;gap:12px">
-              <span style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:#6f7a4d;display:flex;align-items:center;justify-content:center;color:#f7f1e6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 19.5c0-3.6 2.9-6.2 6.5-6.2s6.5 2.6 6.5 6.2"></path></svg></span>
+              <img src="/assets/ic-serv-consulta.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
               <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Consulta nutricional</h3>
             </div>
             <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Sesiones 1:1 personalizadas online para entender tu caso y crear tu plan.</p>
@@ -281,7 +285,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
           <img src="/assets/serv-2.webp" alt="Planes nutricionales" style="width:100%;height:180px;object-fit:cover">
           <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
             <div style="display:flex;align-items:center;gap:12px">
-              <span style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:#6f7a4d;display:flex;align-items:center;justify-content:center;color:#f7f1e6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16" rx="1.5"></rect><path d="M9.5 4.5h5v2.4h-5z"></path><path d="M9 11h6M9 14.5h6"></path></svg></span>
+              <img src="/assets/ic-serv-planes.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
               <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Planes nutricionales</h3>
             </div>
             <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Planes completos y prácticos para diferentes objetivos y estilos de vida.</p>
@@ -291,7 +295,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
           <img src="/assets/serv-3.webp" alt="Acompañamiento y seguimiento" style="width:100%;height:180px;object-fit:cover">
           <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
             <div style="display:flex;align-items:center;gap:12px">
-              <span style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:#6f7a4d;display:flex;align-items:center;justify-content:center;color:#f7f1e6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20c-1-5-4-7-7.5-7.5C6 8 9 7 12 11c3-4 6-3 7.5 1.5C16 13 13 15 12 20z"></path></svg></span>
+              <img src="/assets/ic-serv-acompanamiento.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
               <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Acompañamiento y seguimiento</h3>
             </div>
             <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Acompañamiento continuo y ajustes para avanzar con confianza.</p>
@@ -303,9 +307,15 @@ button{border:none;background:none;cursor:pointer;font:inherit}
 </section>
 
 <section data-sec style="background:#f5efe2;padding:0 clamp(22px,5vw,72px) clamp(46px,6vw,84px)">
-  <div style="max-width:1240px;margin:0 auto;position:relative;border-radius:8px;overflow:hidden">
-    <img src="/assets/guias-banner.webp" alt="Descubre mis guías. Planes, recetas y recursos para cuidarte cada día." style="width:100%;height:auto;display:block">
-    <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" aria-label="Ver guías y recursos" style="position:absolute;left:71%;top:37%;width:25%;height:24%"></a>
+  <div data-guias style="position:relative;max-width:1240px;margin:0 auto;border-radius:8px;overflow:hidden;min-height:clamp(200px,20vw,300px)">
+    <img data-guias-img src="/assets/guias-banner-bg.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left center">
+    <div data-guias-content style="position:relative;z-index:1;min-height:clamp(200px,20vw,300px);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(24px,3vw,40px) clamp(24px,4vw,56px) clamp(24px,3vw,40px) 27%">
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(24px,3.2vw,44px);color:#3c3b34;line-height:1.1">Descubre mis <span style="font-style:italic;color:#6f7a4d">guías</span></h2>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(14px,1.2vw,17px);color:#5c5a4f;margin-top:8px">Planes, recetas y recursos para cuidarte cada día.</p>
+      </div>
+      <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="background:#5e1a24;color:#f7f1e6;border-color:#5e1a24" style="flex:0 0 auto;white-space:nowrap;display:inline-flex;align-items:center;gap:12px;background:transparent;color:#5e1a24;border:1px solid #a4894f;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:15px 26px;border-radius:2px;transition:all .25s">Ver guías y recursos&nbsp;→</a>
+    </div>
   </div>
 </section>
 
