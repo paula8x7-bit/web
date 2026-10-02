@@ -39,6 +39,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
  [data-hero-text]{position:static!important;max-width:none!important;min-height:auto!important;background:#f5efe2!important}
  [data-grid2]{grid-template-columns:1fr!important}
  [data-serv]{grid-template-columns:1fr!important}
+ [data-planes]{grid-template-columns:1fr!important}
  [data-steps]{grid-template-columns:1fr 1fr!important}
  [data-about]{grid-template-columns:1fr!important}
  [data-foot]{grid-template-columns:1fr 1fr!important}
@@ -53,6 +54,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
 }
 @media(max-width:640px){
  [data-serv3]{grid-template-columns:1fr!important}
+ [data-planes]>a{grid-template-columns:1fr!important}
  [data-steps]{grid-template-columns:1fr!important}
  [data-foot]{grid-template-columns:1fr!important}
  [data-legal]{flex-direction:column!important;gap:10px!important;text-align:center}
@@ -67,6 +69,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
     <nav data-nav-desktop style="display:flex;align-items:center;gap:clamp(24px,3.4vw,56px)">
       <a href="/#sobre-mi" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Sobre mí</a>
       <a href="/#servicios" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Servicios</a>
+      <a href="/#planes" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Planes</a>
       <a href="/#contacto" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Contacto</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;flex:0 0 auto">
@@ -86,6 +89,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
   <div id="mobile-menu" style="flex-direction:column;padding:8px clamp(18px,4vw,52px) 22px;background:#faf6ec;border-top:1px solid #e4dcc7">
     <a class="close-menu" href="/#sobre-mi" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Sobre mí</a>
     <a class="close-menu" href="/#servicios" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Servicios</a>
+      <a class="close-menu" href="/#planes" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Planes</a>
     <a class="close-menu" href="/#contacto" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Contacto</a>
     <div style="display:flex;align-items:center;gap:10px;padding:14px 0;font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase">
       <span style="color:#5e1a24;font-weight:600">ES</span>
@@ -171,7 +175,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
         <h4 style="font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#a98a4a;margin-bottom:20px">Servicios</h4>
         <div style="display:flex;flex-direction:column;gap:13px">
           <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="color:#6f7a4d" style="font-family:'EB Garamond',serif;font-size:17px;color:#4c4a40">Consulta nutricional</a>
-          <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="color:#6f7a4d" style="font-family:'EB Garamond',serif;font-size:17px;color:#4c4a40">Planes y guías</a>
+          <a href="/#planes" data-hover="color:#6f7a4d" style="font-family:'EB Garamond',serif;font-size:17px;color:#4c4a40">Planes y guías</a>
           <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="color:#6f7a4d" style="font-family:'EB Garamond',serif;font-size:17px;color:#4c4a40">Acompañamiento</a>
         </div>
       </div>
