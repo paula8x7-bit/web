@@ -71,6 +71,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
  [data-hero-text]{position:static!important;max-width:none!important;min-height:auto!important;background:#f5efe2!important}
  [data-grid2]{grid-template-columns:1fr!important}
  [data-serv]{grid-template-columns:1fr!important}
+ [data-steps]{grid-template-columns:1fr 1fr!important}
  [data-about]{grid-template-columns:1fr!important}
  [data-foot]{grid-template-columns:1fr 1fr!important}
  [data-foot-accent]{grid-column:1/-1!important;min-height:220px!important}
@@ -84,6 +85,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
 }
 @media(max-width:640px){
  [data-serv3]{grid-template-columns:1fr!important}
+ [data-steps]{grid-template-columns:1fr!important}
  [data-foot]{grid-template-columns:1fr!important}
  [data-legal]{flex-direction:column!important;gap:10px!important;text-align:center}
 }
@@ -267,41 +269,80 @@ button{border:none;background:none;cursor:pointer;font:inherit}
       <div style="display:flex;flex-direction:column">
         <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.6vw,50px);line-height:1.08;color:#3c3b34">Services designed <span style="font-style:italic;color:#6f7a4d">for you.</span></h2>
         <div style="width:70px;height:1px;background:#c9b578;margin:24px 0"></div>
-        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(15px,1.2vw,17px);line-height:1.75;color:#5c5a4f">Flexible, personalized options to support you wherever you are on your journey.</p>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(15px,1.2vw,17px);line-height:1.75;color:#5c5a4f">Choose how you want to work with me. Plans come without video calls; if you would rather see me, you can.</p>
         <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="background:#6f7a4d;color:#f7f1e6" style="align-self:flex-start;margin-top:30px;display:inline-flex;align-items:center;gap:12px;background:#5e1a24;color:#f7f1e6;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:16px 28px;border-radius:2px;transition:background .25s">View all services&nbsp;→</a>
       </div>
       <div data-serv3 style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,26px)">
         <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;overflow:hidden;display:flex;flex-direction:column">
-          <img src="/assets/serv-1.webp" alt="Nutrition consultation" style="width:100%;height:180px;object-fit:cover">
-          <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
-            <div style="display:flex;align-items:center;gap:12px">
-              <img src="/assets/ic-serv-consulta.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
-              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Nutrition consultation</h3>
-            </div>
-            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Personalized 1:1 online sessions to understand your case and build your plan.</p>
-          </div>
-        </div>
-        <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;overflow:hidden;display:flex;flex-direction:column">
-          <img src="/assets/serv-2.webp" alt="Nutrition plans" style="width:100%;height:180px;object-fit:cover">
+          <img src="/assets/serv-2.webp" alt="Ready-made plans" style="width:100%;height:180px;object-fit:cover">
           <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
             <div style="display:flex;align-items:center;gap:12px">
               <img src="/assets/ic-serv-planes.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
-              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Nutrition plans</h3>
+              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Ready-made plans</h3>
             </div>
-            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Complete, practical plans for different goals and lifestyles.</p>
+            <p style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1;color:#6f7a4d">From €39.99</p>
+            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Pick one of my 4-week plans and start today. You follow it in Nutria, which adjusts the amounts to you.</p>
           </div>
         </div>
         <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;overflow:hidden;display:flex;flex-direction:column">
-          <img src="/assets/serv-3.webp" alt="Support & follow-up" style="width:100%;height:180px;object-fit:cover">
+          <img src="/assets/serv-3.webp" alt="Personalized plan" style="width:100%;height:180px;object-fit:cover">
           <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
             <div style="display:flex;align-items:center;gap:12px">
               <img src="/assets/ic-serv-acompanamiento.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
-              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Support & follow-up</h3>
+              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Personalized plan</h3>
             </div>
-            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Ongoing support and adjustments to move forward with confidence.</p>
+            <p style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1;color:#6f7a4d">From €69</p>
+            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Your plan built from my questionnaire, your tastes and your blood work. No video call. With a written review from me if you choose Premium.</p>
+          </div>
+        </div>
+        <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;overflow:hidden;display:flex;flex-direction:column">
+          <img src="/assets/serv-1.webp" alt="With video call" style="width:100%;height:180px;object-fit:cover">
+          <div style="padding:22px 22px 28px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:12px">
+              <img src="/assets/ic-serv-consulta.webp" alt="" style="flex:0 0 auto;width:42px;height:42px">
+              <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">With video call</h3>
+            </div>
+            <p style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1;color:#6f7a4d">From €75</p>
+            <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Initial consultation, monthly follow-up and clinical follow-up for complex cases.</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="como-trabajo" data-sec style="background:#f5efe2;padding:0 clamp(22px,5vw,72px) clamp(58px,7vw,106px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div style="text-align:center;max-width:760px;margin:0 auto clamp(34px,4vw,52px)">
+      <span style="font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#a98a4a">How I work</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.6vw,50px);line-height:1.08;color:#3c3b34;margin-top:16px">Your whole plan, <span style="font-style:italic;color:#6f7a4d">on your phone.</span></h2>
+      <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(15px,1.2vw,17px);line-height:1.75;color:#5c5a4f;margin-top:20px">I work with Nutria, an app where you have your menus, the recipes, the shopping list and an assistant that helps you swap a dish when you do not feel like it or cannot find something.</p>
+    </div>
+    <div data-steps style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px)">
+      <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;padding:24px 22px 26px;display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:34px;line-height:1;color:#c9b578">01</span>
+        <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Choose how to work with me</h3>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">My Nutria profile lists every service and price.</p>
+      </div>
+      <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;padding:24px 22px 26px;display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:34px;line-height:1;color:#c9b578">02</span>
+        <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Install Nutria</h3>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">If your plan is personalized, you fill in my questionnaire there and add your blood work if you have it.</p>
+      </div>
+      <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;padding:24px 22px 26px;display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:34px;line-height:1;color:#c9b578">03</span>
+        <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">I build your plan</h3>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">It reaches the app within 5 days.</p>
+      </div>
+      <div style="background:#faf6ec;border:1px solid #e7dfc9;border-radius:5px;padding:24px 22px 26px;display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:34px;line-height:1;color:#c9b578">04</span>
+        <h3 style="font-family:'Jost',sans-serif;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5e1a24;line-height:1.35">Follow it on your phone</h3>
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f">Every dish has its recipe and alternatives to swap it.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:22px;margin-top:clamp(30px,3.5vw,44px);text-align:center">
+      <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.65;color:#5c5a4f;max-width:640px">No recent blood work? You can get it with <a href="https://diagnoseum.com" target="_blank" rel="noopener" style="color:#5e1a24;text-decoration:underline">Diagnoseum</a>, the clinical testing project I co-founded, and I use it for your plan.</p>
+      <a href="https://nutriaplans.com/marketplace/paufly" target="_blank" rel="noopener" data-hover="background:#6f7a4d;color:#f7f1e6" style="display:inline-flex;align-items:center;gap:12px;background:#5e1a24;color:#f7f1e6;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:16px 28px;border-radius:2px;transition:background .25s">Start on Nutria&nbsp;→</a>
     </div>
   </div>
 </section>
