@@ -54,4 +54,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/privacy-policy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/politica-privacidad.html"/>
   </url>
+  <url>
+    <loc>https://paularubionutricionista.com/planes/come-segun-tu-ciclo/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/planes/glow/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

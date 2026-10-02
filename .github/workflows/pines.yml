@@ -1,0 +1,43 @@
+name: Pines
+
+# Fabrica los pines de Pinterest y las fotos de las páginas de plan.
+# Se ejecuta solo cuando cambian los datos de los pines o a mano desde la pestaña Actions.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tools/pines/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pines
+  cancel-in-progress: true
+
+jobs:
+  pines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar Pillow y fuentes
+        run: |
+          pip install pillow==11.0.0
+          mkdir -p tools/pines/fonts
+          base=https://raw.githubusercontent.com/google/fonts/main/ofl
+          curl -sSfL -o tools/pines/fonts/CormorantGaramond.ttf "$base/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf"
+          curl -sSfL -o tools/pines/fonts/Jost.ttf "$base/jost/Jost%5Bwght%5D.ttf"
+          curl -sSfL -o tools/pines/fonts/EBGaramond-Italic.ttf "$base/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf"
+      - name: Fabricar pines
+        run: python tools/pines/make_pins.py
+      - name: Guardar resultado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/planes assets/pines pines/index.html
+          git diff --cached --quiet || git commit -m "Pines y fotos de planes generados"
+          git push
