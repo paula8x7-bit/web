@@ -10,6 +10,7 @@ import io
 import json
 import os
 import sys
+import time
 import urllib.request
 
 from PIL import Image, ImageDraw, ImageFont
@@ -32,9 +33,17 @@ def font(name, size, weight):
 
 
 def fetch(file):
-    req = urllib.request.Request(SRC + file, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return Image.open(io.BytesIO(r.read())).convert("RGB")
+    # Nutria limita las descargas seguidas: espera entre fotos y reintenta con calma.
+    last = None
+    for wait in (2, 10, 30):
+        time.sleep(wait)
+        try:
+            req = urllib.request.Request(SRC + file, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return Image.open(io.BytesIO(r.read())).convert("RGB")
+        except Exception as e:
+            last = e
+    raise last
 
 
 def square(img, size):
@@ -99,26 +108,32 @@ def make_pin(photo, pin):
 def main():
     os.makedirs(os.path.join(ROOT, "assets", "planes"), exist_ok=True)
     os.makedirs(os.path.join(ROOT, "assets", "pines"), exist_ok=True)
-    files = {p["file"] for p in DATA["pins"]} | {g["file"] for gl in DATA["gallery"].values() for g in gl}
-    photos = {}
+    planes = lambda f: os.path.join(ROOT, "assets", "planes", os.path.splitext(f)[0] + ".jpg")
+    pin_out = lambda p: os.path.join(ROOT, "assets", "pines", p["slug"] + ".jpg")
+    # Solo se descarga lo que falta: los pines y fotos ya fabricados no se tocan.
+    todo = [p for p in DATA["pins"] if not os.path.exists(pin_out(p)) or os.environ.get("PIN_REBUILD")]
+    files = {p["file"] for p in todo} | {g["file"] for gl in DATA["gallery"].values() for g in gl if not os.path.exists(planes(g["file"]))}
+    photos, failed = {}, []
     for f in sorted(files):
         try:
             photos[f] = fetch(f)
         except Exception as e:
             print("No se pudo descargar", f, e, file=sys.stderr)
-            if os.environ.get("PIN_PLACEHOLDER"):
-                photos[f] = Image.new("RGB", (1024, 1024), "#c9b578")
-            else:
-                raise
-        out = os.path.join(ROOT, "assets", "planes", os.path.splitext(f)[0] + ".jpg")
-        square(photos[f], 900).save(out, "JPEG", quality=84, optimize=True, progressive=True)
-    for pin in DATA["pins"]:
-        make_pin(photos[pin["file"]], pin).save(
-            os.path.join(ROOT, "assets", "pines", pin["slug"] + ".jpg"), "JPEG", quality=86, optimize=True, progressive=True)
+            failed.append(f"{f}: {e}")
+            continue
+        square(photos[f], 900).save(planes(f), "JPEG", quality=84, optimize=True, progressive=True)
+    made = 0
+    for pin in todo:
+        if pin["file"] not in photos:
+            continue
+        make_pin(photos[pin["file"]], pin).save(pin_out(pin), "JPEG", quality=86, optimize=True, progressive=True)
+        made += 1
+    with open(os.path.join(ROOT, "pines", "resultado.txt"), "w", encoding="utf-8") as fh:
+        fh.write(f"Pines nuevos: {made} de {len(todo)}\n" + "".join(x + "\n" for x in failed))
     cards = "\n".join(
         f'<figure><img src="/assets/pines/{p["slug"]}.jpg" alt="{p["pin_title"]}" data-pin-description="{p["pin_desc"]}" '
         f'data-pin-url="{p["link"]}" width="500" height="750" loading="lazy"><figcaption>{p["pin_title"]}</figcaption></figure>'
-        for p in DATA["pins"])
+        for p in DATA["pins"] if os.path.exists(pin_out(p)))
     html = f"""<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex"><title>Pines · Paula Rubio Nutricionista</title>
@@ -131,7 +146,7 @@ img{{width:100%;height:auto;display:block}}figcaption{{font-size:13px;margin-top
 """
     os.makedirs(os.path.join(ROOT, "pines"), exist_ok=True)
     open(os.path.join(ROOT, "pines", "index.html"), "w", encoding="utf-8").write(html)
-    print(len(DATA["pins"]), "pines y", len(files), "fotos listas")
+    print(made, "pines nuevos;", len(failed), "fotos sin descargar")
 
 
 if __name__ == "__main__":
