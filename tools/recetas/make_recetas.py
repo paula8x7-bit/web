@@ -10,7 +10,7 @@ import re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 SITE = "https://paularubionutricionista.com"
-UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="21a20c4a-cd36-44e3-bc6b-2af2bde813e7"></script>'
+UMAMI = '<script>try{if(/[?&]soy-paula/.test(location.search))localStorage.setItem("umami.disabled","1")}catch(e){}</script>\n<script defer src="https://cloud.umami.is/script.js" data-website-id="21a20c4a-cd36-44e3-bc6b-2af2bde813e7"></script>'
 
 PLANES = {
     "ciclo": {
