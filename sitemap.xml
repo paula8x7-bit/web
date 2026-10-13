@@ -82,4 +82,10 @@
     <loc>https://paularubionutricionista.com/recetas/mousse-de-cacao-aguacate-y-frambuesa/</loc>
     <lastmod>2026-10-06</lastmod>
   </url>
+  <url>
+    <loc>https://paularubionutricionista.com/planes/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
