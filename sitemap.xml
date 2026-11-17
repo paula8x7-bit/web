@@ -106,4 +106,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/cabin-crew/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/tripulaciones/"/>
   </url>
+  <url>
+    <loc>https://paularubionutricionista.com/turnos/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/turnos/que-comer-en-el-turno-de-noche/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
