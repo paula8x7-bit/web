@@ -22,14 +22,14 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - **No nombres a British Airways** ni a ninguna aerolínea concreta como su empresa.
 - Nunca enlaces a productos (Amazon, tiendas, marcas). El nombre del producto puede ir como texto.
 - Todo dato de salud se contrasta con fuentes (PubMed, con su DOI) y las fuentes van listadas al final de la página. Nada de memoria.
-- Diagnoseum (empresa de analíticas de la que Paula es cofundadora): se menciona para quien vive en España. Fórmula aprobada: «eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins». Nunca «tu médico no sabe/no mide esto». Los enlaces a diagnoseum.com llevan parámetros `utm_`.
+- Diagnoseum (empresa de analíticas de la que Paula es cofundadora): se menciona para quien vive en España, también en las páginas en inglés (hay muchos extranjeros en España que buscan en inglés). Fórmula aprobada: «eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins». En inglés: «you choose exactly what you want to test, no doctor's referral needed, backed by Eurofins». Nunca «tu médico no sabe/no mide esto». Los enlaces a diagnoseum.com llevan parámetros `utm_`.
 
 ## Estructura
 
 - `index.html`, `en/index.html`: portada en castellano y en inglés.
 - `planes/`, `recetas/`: planes y recetas (los generan `tools/planes/` y `tools/recetas/`).
 - `tripulaciones/` y `en/cabin-crew/`: páginas de la guía gratuita para tripulaciones, con formulario. Se generan con `python3 tools/crew/build.py` (textos en `tools/crew/content.py`).
-- `turnos/`: bloque de trabajo a turnos (página general y dos artículos). Se genera con `python3 tools/turnos/build.py` (textos y fuentes en `tools/turnos/content.py`). Las citas se escriben `[clave]` en el texto y se convierten en notas numeradas.
+- `turnos/`: bloque de trabajo a turnos (página general y dos artículos). Se genera con `python3 tools/turnos/build.py` (textos y fuentes en `tools/turnos/content.py`; los artículos en inglés, en `tools/turnos/content_en.py`, con `lang`, y `alt` para la página gemela). Las citas se escriben `[clave]` en el texto y se convierten en notas numeradas.
 - Las páginas generadas copian la cabecera y el pie de `planes/glow/index.html` (castellano) o de `en/index.html` (inglés). Si cambias el pie, cámbialo en todas las páginas y vuelve a generar.
 - `tools/crew/emails.py`: genera el HTML de los correos de Brevo (en `tools/crew/emails/`). Si se cambian, hay que pegarlos también en Brevo.
 
@@ -47,9 +47,9 @@ Búsquedas reales (autocompletado de Google, noviembre de 2026). Nadie busca «n
 Hecho:
 1. Páginas de la guía de tripulaciones (ES y EN).
 2. Bloque de turnos en castellano: `/turnos/`, «qué comer en el turno de noche» y «cómo dormir después de un turno de noche».
+3. Turnos en inglés: `/en/what-to-eat-on-night-shift/` (gemela de «qué comer en el turno de noche», enlazada en el pie inglés). Falta una página general de turnos y el artículo de sueño en inglés.
 
 Siguiente, por orden:
-3. **Turnos en inglés**: «What to eat on night shift» (night shift eating schedule, night shift nurse meal prep, night shift weight gain), pensando en enfermería y médicos de Reino Unido.
 4. **Artículos de tripulaciones**:
    - Jet lag en castellano: «jet lag cómo recuperarse», «cómo evitar el jet lag de forma natural», «jet lag comida», «síntomas».
    - Jet lag en inglés: «how to beat jet lag going east / west», «UK to USA», «UK to Australia», «jet lag eating schedule / meal times».

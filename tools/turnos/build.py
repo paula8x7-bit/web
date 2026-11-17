@@ -6,6 +6,28 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from content import SRC, COMER, DORMIR, HUB  # noqa: E402
+from content_en import SRC_EN, EAT_EN  # noqa: E402
+
+SRC.update(SRC_EN)
+# Página gemela en el otro idioma (para hreflang y el selector ES / EN)
+COMER["alt"] = EAT_EN["path"]
+
+# Textos fijos de la plantilla, por idioma
+L = {
+    "es": {"locale": "es_ES", "crumbs": "Migas de pan", "home": ("Inicio", "/"), "src": "Fuente", "src_h": "Fuentes",
+           "faq_h": "Preguntas frecuentes", "by": "Por Paula Rubio, nutricionista integrativa · Noviembre de 2026",
+           "cta_h": "¿Lo adaptamos a tu cuadrante?",
+           "cta_p": "En consulta preparamos pautas para cada tipo de turno, con tu horario, tus síntomas y tus analíticas delante. Online, en castellano o en inglés.",
+           "cta_b1": "Reserva tu cita", "cta_b2": ("Trabajo a turnos", "/turnos/"),
+           "cta_note": '¿Eres TCP o piloto? Tienes una <a href="/tripulaciones/" style="color:#5e1a24;border-bottom:1px solid #c9b578">guía gratuita para tripulaciones de largo radio</a>.'},
+    "en": {"locale": "en_GB", "crumbs": "Breadcrumb", "home": ("Home", "/en/"), "src": "Source", "src_h": "Sources",
+           "faq_h": "Frequently asked questions", "by": "By Paula Rubio, integrative nutritionist · November 2026",
+           "cta_h": "Shall we fit this around your rota?",
+           "cta_p": "In my consultations we build guidelines for each type of shift, with your schedule, your symptoms and your blood tests in front of us. Online, in English or Spanish.",
+           "cta_b1": "Book an appointment", "cta_b2": ("Email me", "mailto:hola@paularubionutricionista.com"),
+           "cta_note": 'Cabin crew or pilot? There is a <a href="/en/cabin-crew/" style="color:#5e1a24;border-bottom:1px solid #c9b578">free guide for long haul crew</a>.'
+                       '<br><br>Living in Spain? You can get your blood tests done at <a href="https://diagnoseum.com/?utm_source=web-night-shift-en&amp;utm_medium=referral" target="_blank" rel="noopener" data-umami-event="diagnoseum-night-shift-en" style="color:#5e1a24;border-bottom:1px solid #c9b578">Diagnoseum</a>: you choose exactly what you want to test, no doctor\'s referral needed, backed by Eurofins.'},
+}
 
 SITE = "https://paularubionutricionista.com"
 NUTRIA = "https://nutriaplans.com/marketplace/paufly"
@@ -33,6 +55,24 @@ def block(src, start, end):
 HEADER = block(glow, "<header", "</header>")
 FOOTER = block(glow, "<footer", "</footer>")
 
+# Cabecera y pie en inglés (los de la home EN), con anclas absolutas
+en_home = (ROOT / "en/index.html").read_text()
+EN_HEADER = block(en_home, "<header", "</header>")
+EN_FOOTER = block(en_home, "<footer", "</footer>")
+for frag in ("inicio", "sobre-mi", "servicios", "planes", "contacto"):
+    EN_HEADER = EN_HEADER.replace(f'href="#{frag}"', f'href="/en/#{frag}"')
+    EN_FOOTER = EN_FOOTER.replace(f'href="#{frag}"', f'href="/en/#{frag}"')
+
+
+def chrome(t):
+    """Cabecera y pie según el idioma, con el selector ES / EN apuntando a la página gemela."""
+    alt = t.get("alt")
+    if t.get("lang") == "en":
+        h = EN_HEADER.replace('href="/"', f'href="{alt}"') if alt else EN_HEADER
+        return h, EN_FOOTER
+    h = HEADER.replace('href="/en/"', f'href="{alt}"') if alt else HEADER
+    return h, FOOTER
+
 F_JOST = "font-family:'Jost',sans-serif"
 F_COR = "font-family:'Cormorant Garamond',serif"
 F_EB = "font-family:'EB Garamond',serif"
@@ -51,8 +91,9 @@ SEC_B = "background:#f5efe2;padding:clamp(54px,7vw,98px) clamp(22px,5vw,72px)"
 class Cites:
     """Convierte [clave] en superíndices numerados por orden de aparición."""
 
-    def __init__(self):
+    def __init__(self, label="Fuente"):
         self.order = []
+        self.label = label
 
     def __call__(self, text):
         def rep(m):
@@ -62,7 +103,7 @@ class Cites:
             if k not in self.order:
                 self.order.append(k)
             n = self.order.index(k) + 1
-            return f'<sup><a href="#fuentes" aria-label="Fuente {n}">{n}</a></sup>'
+            return f'<sup><a href="#fuentes" aria-label="{self.label} {n}">{n}</a></sup>'
         return re.sub(r"\[([a-z]+)\]", rep, text)
 
     def plain(self, text):
@@ -71,8 +112,15 @@ class Cites:
 
 def head(t, ld):
     url = SITE + t["path"]
+    lang = t.get("lang", "es")
+    alts = ""
+    if t.get("alt"):
+        es_url, en_url = (url, SITE + t["alt"]) if lang == "es" else (SITE + t["alt"], url)
+        alts = (f'<link rel="alternate" hreflang="es" href="{es_url}">\n'
+                f'<link rel="alternate" hreflang="en" href="{en_url}">\n'
+                f'<link rel="alternate" hreflang="x-default" href="{es_url}">\n')
     return f"""<!DOCTYPE html>
-<html lang="es">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,9 +130,9 @@ def head(t, ld):
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="canonical" href="{url}">
-<meta property="og:type" content="{'article' if t is not HUB else 'website'}">
+{alts}<meta property="og:type" content="{'article' if t is not HUB else 'website'}">
 <meta property="og:site_name" content="Paula Rubio Nutricionista">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="{L[lang]['locale']}">
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{html.escape(t['title'])}">
 <meta property="og:description" content="{html.escape(t['desc'])}">
@@ -115,14 +163,14 @@ def crumbs(items):
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(items)]}
 
 
-def crumbs_html(items):
+def crumbs_html(items, label="Migas de pan"):
     parts = []
     for i, (n, u) in enumerate(items):
         if i == len(items) - 1:
             parts.append(f'<span aria-current="page">{n}</span>')
         else:
             parts.append(f'<a href="{u}" style="color:#8a8470">{n}</a>')
-    return (f'<nav aria-label="Migas de pan" style="{F_JOST};font-size:13px;color:#8a8470;margin-bottom:22px">'
+    return (f'<nav aria-label="{label}" style="{F_JOST};font-size:13px;color:#8a8470;margin-bottom:22px">'
             + ' <span aria-hidden="true">›</span> '.join(parts) + '</nav>')
 
 
@@ -135,33 +183,39 @@ def faq_html(faq):
         for q, a in faq)
 
 
-def sources_html(c):
+def sources_html(c, title="Fuentes"):
     if not c.order:
         return ""
     items = "".join(
         f'<li style="margin-bottom:8px"><a href="{SRC[k][1]}" target="_blank" rel="noopener" style="color:#5c5a4f;border-bottom:1px solid #d9cfb4">{html.escape(SRC[k][0])}</a></li>'
         for k in c.order)
     return (f'<div id="fuentes" style="max-width:760px;margin:0 auto;padding-top:clamp(30px,4vw,48px)">'
-            f'<h2 style="{F_JOST};font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a98a4a;margin-bottom:14px">Fuentes</h2>'
+            f'<h2 style="{F_JOST};font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a98a4a;margin-bottom:14px">{title}</h2>'
             f'<ol style="{F_JOST};font-weight:300;font-size:14px;line-height:1.6;color:#5c5a4f;padding-left:20px">{items}</ol></div>')
 
 
-def cta_box():
+def cta_box(x):
+    b2_text, b2_url = x["cta_b2"]
     return f"""<div style="max-width:760px;margin:clamp(30px,4vw,48px) auto 0;background:#f5efe2;border:1px solid #e7dfc9;border-radius:6px;padding:clamp(26px,3vw,38px)">
-  <h2 style="{F_COR};font-weight:500;font-size:clamp(26px,2.6vw,34px);line-height:1.15;color:#5e1a24">¿Lo adaptamos a tu cuadrante?</h2>
-  <p style="{BODY};margin-top:12px">En consulta preparamos pautas para cada tipo de turno, con tu horario, tus síntomas y tus analíticas delante. Online, en castellano o en inglés.</p>
+  <h2 style="{F_COR};font-weight:500;font-size:clamp(26px,2.6vw,34px);line-height:1.15;color:#5e1a24">{x['cta_h']}</h2>
+  <p style="{BODY};margin-top:12px">{x['cta_p']}</p>
   <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:22px">
-    <a href="{NUTRIA}" data-umami-event="perfil-nutria" target="_blank" rel="noopener" data-hover="background:#6f7a4d;color:#f7f1e6" style="{BTN}">Reserva tu cita</a>
-    <a href="/turnos/" data-hover="border-color:#5e1a24;color:#5e1a24" style="{BTN2}">Trabajo a turnos</a>
+    <a href="{NUTRIA}" data-umami-event="perfil-nutria" target="_blank" rel="noopener" data-hover="background:#6f7a4d;color:#f7f1e6" style="{BTN}">{x['cta_b1']}</a>
+    <a href="{b2_url}" data-hover="border-color:#5e1a24;color:#5e1a24" style="{BTN2}">{b2_text}</a>
   </div>
-  <p style="{F_JOST};font-weight:300;font-size:15px;line-height:1.6;color:#5c5a4f;margin-top:18px">¿Eres TCP o piloto? Tienes una <a href="/tripulaciones/" style="color:#5e1a24;border-bottom:1px solid #c9b578">guía gratuita para tripulaciones de largo radio</a>.</p>
+  <p style="{F_JOST};font-weight:300;font-size:15px;line-height:1.6;color:#5c5a4f;margin-top:18px">{x['cta_note']}</p>
 </div>"""
 
 
 def article(t):
-    c = Cites()
+    lang = t.get("lang", "es")
+    x = L[lang]
+    c = Cites(x["src"])
     url = SITE + t["path"]
-    trail = [("Inicio", "/"), ("Trabajo a turnos", "/turnos/"), (t["h1"], t["path"])]
+    if lang == "es":
+        trail = [x["home"], ("Trabajo a turnos", "/turnos/"), (t["h1"], t["path"])]
+    else:
+        trail = [x["home"], (t["h1"], t["path"])]
     intro = "".join(f'<p style="{BODY};margin-top:16px">{c(p)}</p>' for p in t["intro"])
     secs = []
     for s in t["sections"]:
@@ -177,7 +231,7 @@ def article(t):
     faq_ld = {"@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in t["faq"]]}
     ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Article", "@id": url + "#articulo", "headline": t["h1"], "description": t["desc"], "inLanguage": "es",
+        {"@type": "Article", "@id": url + "#articulo", "headline": t["h1"], "description": t["desc"], "inLanguage": lang,
          "datePublished": PUBLISHED, "dateModified": PUBLISHED, "mainEntityOfPage": url, "image": SITE + "/assets/hero.jpg",
          "author": {"@id": SITE + "/#paula"}, "publisher": {"@id": SITE + "/#negocio"},
          "citation": [SRC[k][1] for k in t["sources"]]},
@@ -185,29 +239,30 @@ def article(t):
     main = f"""<main>
 <section data-sec style="{SEC_A}">
   <div style="max-width:760px;margin:0 auto">
-    {crumbs_html(trail)}
+    {crumbs_html(trail, x["crumbs"])}
     <span style="{EYEBROW}">{t['eyebrow']}</span>
     <h1 style="{F_COR};font-weight:600;line-height:1.05;font-size:clamp(40px,4.6vw,64px);color:#5e1a24;margin-top:16px">{t['h1']}</h1>
     <div style="width:90px;height:1px;background:#c9b578;margin:24px 0"></div>
     <p style="{F_EB};font-size:clamp(19px,1.6vw,24px);line-height:1.5;color:#4c4a40">{t['lead']}</p>
     {intro}
-    <p style="{F_JOST};font-size:13px;color:#8a8470;margin-top:20px">Por Paula Rubio, nutricionista integrativa · Noviembre de 2026</p>
+    <p style="{F_JOST};font-size:13px;color:#8a8470;margin-top:20px">{x['by']}</p>
   </div>
 </section>
 <section data-sec data-body style="{SEC_B}">
   <div style="max-width:760px;margin:0 auto">
     {''.join(secs)}
   </div>
-  {cta_box()}
+  {cta_box(x)}
   <div style="max-width:760px;margin:clamp(40px,5vw,60px) auto 0">
-    <h2 style="{H2};margin-bottom:clamp(14px,2vw,24px)">Preguntas frecuentes</h2>
+    <h2 style="{H2};margin-bottom:clamp(14px,2vw,24px)">{x['faq_h']}</h2>
     {faq_html(t['faq'])}
   </div>
-  {sources_html(c)}
+  {sources_html(c, x["src_h"])}
 </section>
 </main>
 """
-    return head(t, ld) + HEADER + "\n\n" + main + "\n" + FOOTER + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
+    header, footer = chrome(t)
+    return head(t, ld) + header + "\n\n" + main + "\n" + footer + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
 
 
 def hub(t):
@@ -287,7 +342,7 @@ def hub(t):
     return head(t, ld) + HEADER + "\n\n" + main + "\n" + FOOTER + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
 
 
-for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article)):
+for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article)):
     dest = ROOT / t["path"].strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(fn(t))

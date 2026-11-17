@@ -117,11 +117,23 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/turnos/que-comer-en-el-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/what-to-eat-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/turnos/que-comer-en-el-turno-de-noche/"/>
   </url>
   <url>
     <loc>https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/en/what-to-eat-on-night-shift/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/turnos/que-comer-en-el-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/what-to-eat-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/turnos/que-comer-en-el-turno-de-noche/"/>
   </url>
 </urlset>
