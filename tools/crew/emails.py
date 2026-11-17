@@ -4,6 +4,8 @@ from pathlib import Path
 ES_PDF = "https://drive.google.com/file/d/1AtvnL80xOb6unagv8N3nZI5C-A5iuFeM/view"
 EN_PDF = "https://drive.google.com/file/d/1z3mIxF06HfiV-UheMdgpkJjOCa0ow3wR/view"
 NUTRIA = "https://nutriaplans.com/marketplace/paufly"
+DIAG_ES = "https://diagnoseum.com/?utm_source=guia-tripulaciones&utm_medium=email&utm_campaign=guia-es"
+DIAG_EN = "https://diagnoseum.com/?utm_source=guia-tripulaciones&utm_medium=email&utm_campaign=guia-en"
 
 EMAILS = {
     "es-1-guia": {
@@ -11,14 +13,16 @@ EMAILS = {
         "preheader": "Aquí la tienes, para leerla en la próxima escala.",
         "paras": [
             "Hola:",
-            "Aquí tienes la guía para tripulaciones de largo radio.",
+            "¡Gracias por pedirla! Aquí tienes la guía. La he preparado a partir de la investigación científica sobre jet lag, sueño y alimentación, y he probado el método en mis propias rotaciones.",
             ("btn", "Descargar la guía", ES_PDF),
-            "Es la que uso yo. Si vas justo de tiempo, empieza por la página del jet lag según a qué hora aterrices: es la que antes se nota.",
-            "Si te surge cualquier duda, contesta a este correo. Lo leo yo.",
+            "Si vas con prisa, empieza por la página del jet lag y busca tu hora de llegada.",
+            f'Al final tienes un apartado con una idea de qué analíticas puedes pedir. Si vives en España, te recomiendo <a href="{DIAG_ES}" style="color:#5e1a24">Diagnoseum</a>: eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins.',
+            "Cualquier duda, contesta a este correo. Lo leo yo.",
             "Buen vuelo, y nos vemos en la sala de firmas.",
+            "Un abrazo,",
             "Paula",
         ],
-        "footer": 'Recibes este correo porque te descargaste la guía en paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Darme de baja</a>.',
+        "footer": 'Recibes este correo porque pediste la guía en paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Darme de baja</a>.',
     },
     "es-2-seguimiento": {
         "subject": "¿Qué tal la última rotación?",
@@ -33,21 +37,22 @@ EMAILS = {
             "Un abrazo,",
             "Paula",
         ],
-        "footer": 'Recibes este correo porque te descargaste la guía en paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Darme de baja</a>.',
+        "footer": 'Recibes este correo porque pediste la guía en paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Darme de baja</a>.',
     },
     "en-1-guide": {
         "subject": "Your long-haul crew guide",
         "preheader": "Here it is, ready for your next layover.",
         "paras": [
             "Hi,",
-            "Here's your guide for long-haul crew.",
+            "Thanks for asking for it! Here's your guide. I put it together from the scientific research on jet lag, sleep and nutrition, and I've tested the method on my own trips.",
             ("btn", "Download the guide", EN_PDF),
-            "It's the one I use myself. If you're short on time, start with the jet lag page by arrival time. It's the one you'll notice first.",
-            "If you have any questions, just reply to this email. I read every reply myself.",
+            "If you're short on time, start with the jet lag page and find your arrival time.",
+            f'At the end there\'s a section that gives you an idea of which blood tests you can ask for. If you\'re based in Spain, I recommend <a href="{DIAG_EN}" style="color:#5e1a24">Diagnoseum</a>: you choose exactly what you want to test, with no referral needed and backed by Eurofins.',
+            "Any questions, just reply to this email. I read every reply myself.",
             "Have a good flight, and see you at report.",
             "Paula",
         ],
-        "footer": 'You\'re getting this email because you downloaded the guide at paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Unsubscribe</a>.',
+        "footer": 'You\'re getting this email because you requested the guide at paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Unsubscribe</a>.',
     },
     "en-2-follow-up": {
         "subject": "How was your last trip?",
@@ -62,7 +67,7 @@ EMAILS = {
             "Speak soon,",
             "Paula",
         ],
-        "footer": 'You\'re getting this email because you downloaded the guide at paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Unsubscribe</a>.',
+        "footer": 'You\'re getting this email because you requested the guide at paularubionutricionista.com. <a href="{{ unsubscribe }}" style="color:#8a8470">Unsubscribe</a>.',
     },
 }
 
