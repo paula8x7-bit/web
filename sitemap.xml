@@ -88,4 +88,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://paularubionutricionista.com/tripulaciones/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/tripulaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/cabin-crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/tripulaciones/"/>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/en/cabin-crew/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/tripulaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/cabin-crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/tripulaciones/"/>
+  </url>
 </urlset>
