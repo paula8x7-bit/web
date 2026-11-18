@@ -49,6 +49,7 @@ Los PDF no están en el repositorio, así que aquí van sus reglas. **Antes de e
 - Cafeína en la primera mitad de la jornada, poco a poco, y nada en las 6 horas antes de dormir.
 - Alcohol: la guía dice «empeora el sueño y la deshidratación; si bebes, que sea poco, con comida y lejos de la hora de dormir». En la web Paula prefiere: «el alcohol, en realidad, no ayuda a dormir». Paula no bebe: no ponerle en boca que toma alcohol.
 - No poner en primera persona prácticas de Paula que no estén en las guías o que ella no haya confirmado.
+- Corto radio (confirmado por Paula): empezó su carrera con cuatro años en corto radio, rotaciones de 4 a 6 saltos con escalas de 25 minutos, semanas de madrugones y semanas de tardes, comida traída de casa (sin comida de tripulación a bordo) y calentada en el horno del avión; comían en la escala si aterrizaban antes o en vuelo después del servicio de venta. No recomienda el agua caliente del avión. **No todas las compañías de corto radio vuelven a base: algunas pernoctan**; no decir que en corto radio no se hace noche fuera.
 
 ## Guía gratuita y correos (Brevo)
 
@@ -68,6 +69,7 @@ Hecho:
 4a. Jet lag: `/jet-lag/` y `/en/jet-lag/` (para viajeros; aviso para TCP con escalas cortas y la regla de las 48 horas).
 4b. «Qué comer antes de un vuelo largo»: `/que-comer-antes-de-un-vuelo-largo/` (líquidos en el control: depende de cada aeropuerto, remitir a confirmarlo con su seguridad).
 4c. «Cabin crew meal prep»: `/en/cabin-crew-meal-prep/` (a partir de la guía en inglés).
+4d. TCP de corto radio: `/tcp-corto-radio-que-comer/` y `/en/short-haul-cabin-crew-food/` (madrugones, varios saltos, electrolitos, agua del avión). Enlazado desde las páginas de Madrid y Barcelona.
 5a. Ciudades, primera tanda: Madrid, Barcelona, Vigo y Santander, en castellano y en inglés. Esperar a ver en Search Console si funcionan antes de hacer más.
 
 Siguiente, por orden:

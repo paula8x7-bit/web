@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from content import SRC, COMER, DORMIR, HUB  # noqa: E402
 from content_en import SRC_EN, EAT_EN, SLEEP_EN
-from content_viajes import SRC_VIAJES, JETLAG, JETLAG_EN, VUELO, MEALPREP_EN, CORTO  # noqa: E402
+from content_viajes import SRC_VIAJES, JETLAG, JETLAG_EN, VUELO, MEALPREP_EN, CORTO, CORTO_EN  # noqa: E402
 
 for extra in (SRC_EN, SRC_VIAJES):
     repes = SRC.keys() & extra.keys()
@@ -349,7 +349,7 @@ def hub(t):
     return head(t, ld) + HEADER + "\n\n" + main + "\n" + FOOTER + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
 
 
-for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article), (JETLAG, article), (JETLAG_EN, article), (VUELO, article), (MEALPREP_EN, article), (CORTO, article)):
+for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article), (JETLAG, article), (JETLAG_EN, article), (VUELO, article), (MEALPREP_EN, article), (CORTO, article), (CORTO_EN, article)):
     dest = ROOT / t["path"].strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(fn(t))

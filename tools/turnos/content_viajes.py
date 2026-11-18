@@ -425,20 +425,25 @@ SRC_VIAJES.update({
     "arsintescu": ("Arsintescu L y cols. Early starts and late finishes both reduce alertness and performance among short-haul airline pilots. Journal of Sleep Research, 2021.", "https://doi.org/10.1111/jsr.13521"),
     "akerstedt": ("Åkerstedt T y cols. Acute and cumulative effects of scheduling on aircrew fatigue in ultra-short-haul operations. Journal of Sleep Research, 2021.", "https://doi.org/10.1111/jsr.13305"),
     "steven": ("Steven D y cols. Additive effects of time awake and number of flights on fatigue in short-haul pilots. Journal of Sleep Research, 2026.", "https://doi.org/10.1111/jsr.70473"),
+    "bhi": ("Maughan RJ y cols. A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. American Journal of Clinical Nutrition, 2016.", "https://doi.org/10.3945/ajcn.115.114769"),
+    "aguavion": ("Handschuh H y cols. Bacteria that travel: the quality of aircraft water. International Journal of Environmental Research and Public Health, 2015.", "https://doi.org/10.3390/ijerph121113938"),
     "vejvoda": ("Vejvoda M y cols. Significance of time awake for predicting pilots' fatigue on short-haul flights. Journal of Sleep Research, 2014.", "https://doi.org/10.1111/jsr.12186"),
 })
 
 CORTO = {
     "path": "/tcp-corto-radio-que-comer/",
+    "alt": "/en/short-haul-cabin-crew-food/",
     "trail": [],
     "title": "TCP de corto radio: qué comer con madrugones y varios saltos",
-    "desc": "Qué comer si eres TCP de corto radio: el desayuno cuando entras a las 5:00, qué llevar para cuatro saltos sin tiempo de sentarte, la cafeína y cómo dormir con los madrugones. De una sobrecargo nutricionista.",
+    "desc": "Qué comer si eres TCP de corto radio: el desayuno cuando firmas a las 5:00, qué llevar para cuatro o seis saltos, cómo reponer líquidos y electrolitos y cómo encadenar madrugones. De una sobrecargo nutricionista.",
     "eyebrow": "Tripulaciones · Corto radio",
     "h1": "TCP de corto radio: qué comer con madrugones y varios saltos",
-    "lead": "Firmas de madrugada, cuatro saltos seguidos, rotaciones de media hora y vuelta a base. Así se organiza la comida para llegar entero al último tramo.",
+    "lead": "Firmas de madrugada, cuatro o seis saltos con 25 minutos de escala y, muchas veces, vuelta a base. Así se organiza la comida para llegar entero al último tramo.",
     "intro": [
-        "Soy nutricionista y sobrecargo. En corto radio casi nunca se hace noche fuera: el reto es otro. Te levantas a las 3:30, desayunas a deshoras, en las rotaciones no hay tiempo de sentarse y a bordo solo hay lo que se vende.",
-        "Esto es lo que dicen los estudios con tripulaciones de corto radio y cómo lo llevaría a tu bolsa.",
+        "Soy nutricionista y sobrecargo. Empecé en corto radio: cuatro años de rotaciones de cuatro y hasta seis saltos, con escalas de 25 minutos, semanas de madrugones y semanas de tardes.",
+        "La comida la llevábamos de casa: a bordo no había nada para la tripulación. A veces comíamos en la escala, si aterrizábamos antes de hora, y si no, en vuelo, después del servicio de venta. Dependía mucho del destino.",
+        "No todas las compañías trabajan igual: en unas se pernocta fuera y en otras se vuelve siempre a base. Este artículo es sobre todo para los días de ida y vuelta, con varios saltos seguidos.",
+        "Esto es lo que me habría gustado que me contaran entonces, con lo que dicen los estudios con tripulaciones de corto radio.",
     ],
     "sections": [
         {
@@ -447,6 +452,14 @@ CORTO = {
                 "En un estudio con 95 pilotos de corto radio, la noche antes de una firma temprana dormían de media una hora y media menos que antes de una salida de tarde, y empezaban el día más cansados.[arsintescu]",
                 "Y se acumula. En otro estudio con tripulaciones (entre ellos, TCP), cuantas más firmas muy tempranas había en la semana, más cansancio arrastraban, y cada hora de sueño de más lo reducía.[akerstedt]",
                 "Los saltos también suman: con cuatro vuelos en el día, el cansancio llegaba a su punto crítico más de dos horas antes que con uno solo.[steven]",
+            ],
+        },
+        {
+            "h2": "Organízate en tus libres",
+            "ps": [
+                "Con cinco días seguidos de rotaciones, si no llevas la comida hecha, acabas tirando de sándwich o de fideos instantáneos. Lo que mejor funciona es cocinar una o dos veces en los libres y dejarlo en raciones.",
+                "Prepara cada noche la bolsa del día siguiente: el desayuno, lo que vas a picar entre saltos y la comida principal. A las 3:30 nadie decide bien qué llevarse.",
+                "Si la comida la vas a calentar en el horno del avión, llévala en un recipiente apto para horno.",
             ],
         },
         {
@@ -464,10 +477,10 @@ CORTO = {
             ],
         },
         {
-            "h2": "En la bolsa: comida para comer de pie",
+            "h2": "Entre saltos: comida que se come en cinco minutos",
             "ps": [
-                "En las rotaciones cortas no te vas a sentar. Lleva cosas que se coman en dos minutos, sin cubiertos y sin microondas, y repártelas entre los saltos en lugar de esperar al final.",
-                "Cuando haya un tramo más largo o una rotación con algo más de margen, ahí va la comida principal: un táper preparado en casa.",
+                "Con 25 minutos de escala nunca sabes si vas a poder sentarte. Lleva cosas que se coman rápido y sin cubiertos, y repártelas entre los saltos en lugar de llegar al último tramo sin haber comido.",
+                "La comida principal, cuando haya hueco: en una escala en la que aterrices antes de hora o en vuelo, después del servicio.",
             ],
             "list_h": "Lo que cabe en la bolsa",
             "list": [
@@ -475,14 +488,23 @@ CORTO = {
                 "Bastones de zanahoria, pepino y pimiento, con hummus.",
                 "Fruta entera: plátano, manzana, mandarinas.",
                 "Un puñado de frutos secos.",
-                "Un táper con arroz o patata, verdura y proteína (pollo, pescado, legumbre o tortilla).",
                 "Queso curado o latas pequeñas de atún o sardinas.",
+                "Para la comida principal: arroz o patata, verdura y proteína (pollo, pescado, legumbre o tortilla).",
             ],
         },
         {
-            "h2": "Agua entre salto y salto",
+            "h2": "Líquidos y electrolitos durante el día",
             "ps": [
-                "El aire de cabina es muy seco.[martingill] Con las prisas de las rotaciones es fácil pasar horas sin beber: lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
+                "El aire de cabina es muy seco[martingill] y en las rotaciones es fácil pasar horas sin beber. Lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
+                "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, la leche y las soluciones de rehidratación oral se retenían bastante más que el agua; las bebidas para deportistas, en cambio, no se diferenciaron del agua.[bhi]",
+                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas), un caldo con sal en el termo o un vaso de leche o kéfir. En días de mucho calor o mucho trabajo, una solución de rehidratación oral de farmacia es una opción; consulta cómo tomarla con un profesional.",
+            ],
+        },
+        {
+            "h2": "El agua caliente del avión",
+            "ps": [
+                "Es lo que hay a mano para un té, unos fideos o algo calentito, pero el agua de los depósitos no siempre está en buenas condiciones. En un estudio que analizó el agua de a bordo, se encontraron bacterias de 37 especies distintas, y el camión que rellena los depósitos era una de las principales fuentes.[aguavion]",
+                "Si te gusta tomar algo caliente en la rotación, lleva un termo desde casa con agua caliente o caldo.",
             ],
         },
         {
@@ -500,7 +522,7 @@ CORTO = {
             ],
         },
         {
-            "h2": "Si tu turno es de tarde y acabas de madrugada",
+            "h2": "Semanas de tardes: cuando acabas de madrugada",
             "ps": [
                 "Las salidas de tarde parecen más fáciles, pero al final de la jornada se acumulan muchas horas despierto, y el cansancio al aterrizar es mayor que en las firmas tempranas.[vejvoda]",
                 "Haz la comida principal antes de firmar, algo ligero en los saltos de la noche y, al llegar a casa, solo algo pequeño antes de dormir.",
@@ -509,15 +531,132 @@ CORTO = {
     ],
     "faq": [
         ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica."),
-        ("¿Qué comer en un día de varios saltos sin tiempo de sentarse?", "Cosas que se comen en dos minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, en el tramo o la rotación con más margen."),
+        ("¿Qué comer en un día de cuatro o seis saltos?", "Cosas que se comen en cinco minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, cuando haya hueco en una escala o después del servicio."),
+        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado), un caldo en el termo o un vaso de leche o kéfir. En un ensayo, la leche y las soluciones de rehidratación oral se retenían más que el agua."),
+        ("¿Es seguro el agua caliente del avión?", "El agua de los depósitos no siempre está en buenas condiciones: en un estudio se encontraron bacterias de muchas especies. Para algo caliente, mejor un termo traído de casa."),
         ("¿Cuándo dejar el café si madrugo al día siguiente?", "Tómalo en la primera mitad de la jornada y deja al menos 6 horas sin cafeína antes de acostarte."),
-        ("¿Por qué estoy tan cansado después de varios días de madrugones?", "Porque antes de una firma temprana se duerme menos, y esa falta de sueño se va sumando a lo largo de la semana. Adelantar la cena y la hora de acostarte es lo que más ayuda."),
     ],
-    "sources": ["arsintescu", "akerstedt", "steven", "gupta", "martingill", "drake", "vejvoda"],
+    "sources": ["arsintescu", "akerstedt", "steven", "gupta", "martingill", "bhi", "aguavion", "drake", "vejvoda"],
     "cta": {
         "cta_h": "¿Vuelas en corto radio?",
         "cta_p": "En consulta preparamos tu plan según tu programación: qué comer en cada tipo de firma, cómo encadenar madrugones y cómo recuperar en tus libres. Online, en castellano o en inglés.",
         "cta_b2": ("Ver todas las guías", "/guias/"),
         "cta_note": JETLAG["cta"]["cta_note"].replace("web-jet-lag", "web-corto-radio").replace("diagnoseum-jet-lag", "diagnoseum-corto-radio"),
+    },
+}
+
+CORTO_EN = {
+    "lang": "en",
+    "path": "/en/short-haul-cabin-crew-food/",
+    "alt": "/tcp-corto-radio-que-comer/",
+    "trail": [],
+    "title": "Short haul cabin crew: what to eat on earlies and multi sector days",
+    "desc": "What to eat as short haul cabin crew: breakfast before a 5am report, what to pack for four to six sectors, how to stay hydrated and replace electrolytes, and how to cope with a week of earlies. From an Inflight Manager and nutritionist.",
+    "eyebrow": "Cabin crew · Short haul",
+    "h1": "Short haul cabin crew: what to eat on earlies and multi sector days",
+    "lead": "Reports in the middle of the night, four to six sectors with 25 minute turnarounds and, often, back to base. Here's how to plan your food so you still have energy on the last sector.",
+    "intro": [
+        "I'm a nutritionist and an Inflight Manager. I started on short haul: four years of four and up to six sectors a day, 25 minute turnarounds, weeks of earlies and weeks of lates.",
+        "We brought our food from home: there was nothing on board for the crew. Sometimes we ate on the ground if we landed early, and if not, in the air after the onboard sales. It depended a lot on the destination.",
+        "Not every airline works the same way: some short haul crews night stop and others always return to base. This article is mainly for those there and back days with several sectors in a row.",
+        "This is what I wish someone had told me back then, together with what the research on short haul crew says.",
+    ],
+    "sections": [
+        {
+            "h2": "Why earlies take their toll",
+            "ps": [
+                "In a study of 95 short haul pilots, the night before an early report they slept about an hour and a half less than before a late start, and they began the day more tired.[arsintescu]",
+                "And it adds up. In another study of aircrew (cabin crew included), the more very early duties in a week, the more tired they became, and every extra hour of sleep helped.[akerstedt]",
+                "Sectors count too: with four flights in a day, fatigue hit its critical point more than two hours earlier than with just one.[steven]",
+            ],
+        },
+        {
+            "h2": "Get organised on your days off",
+            "ps": [
+                "With five days of flying in a row, if your food isn't ready you end up living on sandwiches or instant noodles. What works best is cooking once or twice on your days off and portioning it out.",
+                "Pack the next day's bag the night before: breakfast, something to snack on between sectors and your main meal. Nobody makes good food choices at 3:30am.",
+                "If you're going to heat your meal in the aircraft oven, pack it in an ovenproof container.",
+            ],
+        },
+        {
+            "h2": "Before you report: a light breakfast",
+            "ps": [
+                "If you report at 5am, your body still thinks it's night: between midnight and 6am, keep it small and easy to digest. In a night shift study, people who had a light snack in the early hours performed better than those who had a full meal or ate nothing.[gupta]",
+                "The key is not to leave home on an empty stomach and a lot of coffee.",
+            ],
+            "list_h": "Ideas for that first breakfast",
+            "list": [
+                "Natural yoghurt or kefir with fruit.",
+                "Sourdough toast with olive oil and tomato.",
+                "A glass of milk or a plant drink with a few nuts.",
+                "A boiled egg, made the night before.",
+            ],
+        },
+        {
+            "h2": "Between sectors: food you can eat in five minutes",
+            "ps": [
+                "With a 25 minute turnaround you never know if you'll get to sit down. Pack things you can eat quickly without cutlery, and spread them across the sectors so you don't reach the last one without having eaten.",
+                "Have your main meal whenever there's a gap: on a turnaround when you land early, or in the air after the service.",
+            ],
+            "list_h": "What fits in your bag",
+            "list": [
+                "Boiled eggs.",
+                "Carrot, cucumber and pepper sticks with hummus.",
+                "Whole fruit: bananas, apples, satsumas.",
+                "A handful of nuts.",
+                "Hard cheese or small tins of tuna or sardines.",
+                "For your main meal: rice or potatoes, vegetables and protein (chicken, fish, beans or a Spanish omelette).",
+            ],
+        },
+        {
+            "h2": "Fluids and electrolytes through the day",
+            "ps": [
+                "Cabin air is very dry[martingill] and on a busy day it's easy to go hours without drinking. Bring your own bottle and have a little on every sector, without waiting until you're thirsty.",
+                "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that milk and oral rehydration solutions were retained much better than water, while sports drinks were no different from water.[bhi]",
+                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish), a salted broth in a flask or a glass of milk or kefir. On very hot or very busy days, an oral rehydration solution from the pharmacy is an option; ask a professional how to take it.",
+            ],
+        },
+        {
+            "h2": "The hot water on board",
+            "ps": [
+                "It's what's at hand for a tea, some noodles or something warm, but the water in the aircraft tanks isn't always in good condition. A study that tested water on board found 37 different species of bacteria, and the truck that fills the tanks was one of the main sources.[aguavion]",
+                "If you like something hot during the day, bring a flask from home with hot water or broth.",
+            ],
+        },
+        {
+            "h2": "Caffeine: early in the day",
+            "ps": [
+                "Coffee helps in the first half of your duty, but it takes hours to clear: even 6 hours before bed, it cuts your sleep short.[drake]",
+                "If you're on another early tomorrow, that mid afternoon coffee will take away exactly the hours you need. Have it early, a little at a time, and nothing in the 6 hours before bed.",
+            ],
+        },
+        {
+            "h2": "Back home: a normal meal and an early night",
+            "ps": [
+                "If you finish around midday, have a proper meal, like on any other day. That way you won't spend the evening snacking.",
+                "If you're reporting early again tomorrow, bring dinner and bedtime forward. Adding up hours of sleep is what protects you most from a run of earlies.[akerstedt]",
+            ],
+        },
+        {
+            "h2": "Weeks of lates: when you finish after midnight",
+            "ps": [
+                "Late starts look easier, but by the end of the duty you've been awake for a long time, and fatigue on landing is higher than on earlies.[vejvoda]",
+                "Have your main meal before you report, something light on the evening sectors and, once home, only something small before bed.",
+            ],
+        },
+    ],
+    "faq": [
+        ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, toast with olive oil or a glass of milk with a few nuts. At that hour your body is still in its biological night."),
+        ("What should cabin crew eat on a four or six sector day?", "Food you can eat in five minutes without cutlery, like boiled eggs, fruit, nuts or vegetable sticks with hummus, spread across the sectors. Have your main meal when there's a gap on a turnaround or after the service."),
+        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty), a broth in a flask or a glass of milk or kefir. In one trial, milk and oral rehydration solutions were retained better than water."),
+        ("Is the hot water on a plane safe to drink?", "The water in aircraft tanks isn't always in good condition: one study found many species of bacteria. For something hot, a flask from home is a better option."),
+        ("When should I stop caffeine if I have an early tomorrow?", "Have it in the first half of your duty and leave at least 6 hours without caffeine before bed."),
+    ],
+    "sources": CORTO["sources"],
+    "cta": {
+        "cta_h": "Flying short haul?",
+        "cta_p": "In my consultations we build a plan around your roster: what to eat on each type of duty, how to handle a run of earlies and how to recover on your days off. Online, in English or Spanish.",
+        "cta_b2": ("See all guides", "/en/guides/"),
+        "cta_note": JETLAG_EN["cta"]["cta_note"].replace("web-jet-lag-en", "web-short-haul-en").replace("diagnoseum-jet-lag-en", "diagnoseum-short-haul-en"),
     },
 }

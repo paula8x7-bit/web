@@ -60,6 +60,7 @@ EN = {
         ("Travel and cabin crew", [
             ("Article", "How to beat jet lag", "Going east or west, from the UK to the USA or Australia, with a jet lag eating schedule.", "/en/jet-lag/", None),
             ("Article", "Cabin crew meal prep", "What to cook before a trip, what to pack and what to eat on a night flight.", "/en/cabin-crew-meal-prep/", None),
+            ("Article", "Short haul cabin crew: what to eat", "Breakfast before a 5am report, what to pack for multi sector days and how to cope with a run of earlies.", "/en/short-haul-cabin-crew-food/", None),
             ("Free guide", "Guide for long haul cabin crew", "Jet lag, food on board, sleep and blood tests for 24 to 72 hour layovers.", "/en/cabin-crew/", "/assets/guias/cabin-crew-guide-cover.webp|contain"),
         ]),
         ("Online consultations in Spain", [

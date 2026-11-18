@@ -134,7 +134,7 @@ def texts(lang, slug, city, centros, crew):
                 ("Personalized plan", "From €69", "Your plan built from my questionnaire, your tastes and your blood work. No video call."),
                 ("With video call", "From €75", "Initial consultation, monthly follow-up and clinical follow-up for complex cases."),
             ],
-            "crew": (f"Cabin crew or pilot based in {city}? There's a <a href=\"/en/cabin-crew/\">free guide for long haul crew</a>." if crew else ""),
+            "crew": (f"Cabin crew or pilot based in {city}? There's a <a href=\"/en/cabin-crew/\">free guide for long haul crew</a> and, if you fly short haul, <a href=\"/en/short-haul-cabin-crew-food/\">what to eat on earlies and multi sector days</a>." if crew else ""),
             "cta": "Book an appointment", "cta2": ("Guides and articles", "/en/guides/"),
             "faq_h": "Frequently asked questions",
             "faq": [
