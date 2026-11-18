@@ -17,7 +17,8 @@ JETLAG = {
     "lead": "Qué hacer antes, durante y después del vuelo para que tu cuerpo llegue cuanto antes a la hora del destino.",
     "intro": [
         "Soy nutricionista y sobrecargo de largo radio. Cruzo husos horarios varias veces al mes, así que el jet lag forma parte de mi trabajo.",
-        "Aquí tienes lo que dicen los estudios y cómo lo aplico yo. Vale para unas vacaciones en Nueva York y para un viaje de trabajo a Tokio.",
+        "Aquí tienes lo que dicen los estudios para cuando vas a quedarte varios días en el destino: unas vacaciones en Nueva York o un viaje de trabajo a Tokio.",
+        "<strong>Si eres TCP o piloto</strong> con escalas de menos de 48 horas, esto no es para ti: en escalas cortas, lo mejor es quedarte en la hora de casa. Lo tienes explicado en mi <a href=\"/tripulaciones/\" style=\"color:#5e1a24;border-bottom:1px solid #c9b578\">guía gratuita para tripulaciones de largo radio</a>.",
     ],
     "sections": [
         {
@@ -38,7 +39,7 @@ JETLAG = {
             "h2": "Antes del vuelo: empieza a moverte",
             "ps": [
                 "Puedes llegar con parte del camino hecho. En un estudio, adelantar la hora de acostarse una hora cada día durante tres días, con luz intensa por la mañana al levantarse, adelantó el reloj interno unas dos horas antes de viajar.[burgess]",
-                "Si vas hacia el este, acuéstate y levántate un poco antes los días previos y busca luz por la mañana. Si vas hacia el oeste, yo hago lo contrario: me acuesto un poco más tarde.",
+                "Si vas hacia el este, acuéstate y levántate un poco antes los días previos y busca luz por la mañana. Si vas hacia el oeste, al revés: acuéstate un poco más tarde.",
             ],
         },
         {
@@ -54,12 +55,12 @@ JETLAG = {
                 "El horario de las comidas también mueve relojes del cuerpo. En un estudio de la Universidad de Surrey, retrasar las comidas cinco horas retrasó casi seis horas el ritmo de la glucosa en sangre.[wehrens]",
                 "No hay estudios buenos sobre alimentos concretos contra el jet lag.[herxbmj] Lo que sí puedes hacer es comer a las horas del sitio donde estás desde el primer día, aunque no tengas hambre.",
             ],
-            "list_h": "Lo que hago yo al llegar",
+            "list_h": "Si vas a quedarte varios días",
             "list": [
-                "Si llego por la mañana, un desayuno de verdad: huevos, fruta, pan, yogur.",
+                "Si llegas por la mañana, un desayuno de verdad: huevos, fruta, pan, yogur.",
                 "Comida y cena a la hora local, aunque sea algo pequeño.",
                 "Cenas ligeras las primeras noches, para dormir mejor.",
-                "Agua durante todo el día y nada de alcohol.",
+                "Agua durante todo el día.",
             ],
         },
         {
@@ -77,9 +78,10 @@ JETLAG = {
             ],
         },
         {
-            "h2": "Escalas cortas: a veces mejor no adaptarse",
+            "h2": "Escalas cortas: quédate en la hora de casa",
             "ps": [
-                "Si vas a estar solo uno o dos días, no siempre compensa cambiar de horario. En muchas escalas yo me quedo en la hora de casa y vuelvo casi sin jet lag.",
+                "Si vas a estar menos de 48 horas, no intentes adaptarte a la hora local. Duerme lo más cerca posible de la noche de casa y come en horario de casa: así la vuelta cuesta mucho menos. Es lo que hago yo en mis escalas.",
+                "Si la escala es de más de 48 horas, duerme en la noche local, pero haz que al menos 4 horas de sueño coincidan con la noche de casa.",
                 "Lo explico con detalle en la <a href=\"/tripulaciones/\">guía gratuita para tripulaciones de largo radio</a>, pensada para escalas de 24 a 72 horas.",
             ],
         },
@@ -87,7 +89,8 @@ JETLAG = {
     "faq": [
         ("¿Cuánto dura el jet lag?", "Depende de cuántos husos horarios cruces y de la dirección. Hacia el este suele durar más que hacia el oeste, y cuantos más husos, más días tarda el cuerpo en ponerse en hora."),
         ("¿Cómo evitar el jet lag de forma natural?", "Empieza a mover tu horario unos días antes, vive en la hora de destino desde que subes al avión, come y duerme a la hora local, busca luz de día y deja el café para la primera parte del día."),
-        ("¿Qué comer para el jet lag?", "No hay alimentos milagro, pero sí importa el horario: come a las horas del destino desde el primer día, con cenas ligeras las primeras noches, agua de sobra y nada de alcohol."),
+        ("¿Qué comer para el jet lag?", "No hay alimentos milagro, pero sí importa el horario: come a las horas del destino desde el primer día, con cenas ligeras las primeras noches, agua de sobra."),
+        ("¿Y si soy TCP o piloto?", "En escalas de menos de 48 horas, no te adaptes a la hora local: duerme lo más cerca posible de la noche de casa y come en horario de casa. Así la vuelta cuesta mucho menos."),
         ("¿Qué síntomas tiene el jet lag?", "Dormir mal, cansancio durante el día, rendir menos, problemas de digestión y malestar general."),
         ("¿Funciona la melatonina para el jet lag?", "Es lo que más evidencia tiene, sobre todo en vuelos de cinco o más husos hacia el este, tomada cerca de la hora de acostarse en el destino. Antes de tomarla, consúltalo con un profesional."),
     ],
