@@ -1,6 +1,7 @@
 # Textos de los artículos de viajes y jet lag (castellano). Se generan con tools/turnos/build.py.
 
 SRC_VIAJES = {
+    "stpierre": ("St-Pierre V y cols. Plasma ketone and medium chain fatty acid response in humans consuming different medium chain triglycerides during a metabolic study day. Frontiers in Nutrition, 2019.", "https://doi.org/10.3389/fnut.2019.00046"),
     "hobson": ("Hobson RM, Maughan RJ. Hydration status and the diuretic action of a small dose of alcohol. Alcohol and Alcoholism, 2010.", "https://doi.org/10.1093/alcalc/agq029"),
     "martingill": ("Martin-Gill C y cols. In-flight medical emergencies: a review. JAMA, 2018.", "https://doi.org/10.1001/jama.2018.19842"),
     "hinning": ("Hinninghofen H, Enck P. Passenger well-being in airplanes. Autonomic Neuroscience, 2006.", "https://doi.org/10.1016/j.autneu.2006.07.018"),
@@ -463,17 +464,17 @@ CORTO = {
             ],
         },
         {
-            "h2": "Antes de firmar: un desayuno ligero",
+            "h2": "Antes de firmar: algo ligero, o nada",
             "ps": [
-                "Si firmas a las 5:00, para tu cuerpo sigue siendo de noche: entre las 00:00 y las 6:00 toca algo pequeño y fácil de digerir. En un estudio de turnos de noche, a esas horas rendían mejor quienes tomaban algo ligero que quienes hacían una comida completa o no comían nada.[gupta]",
-                "Lo importante es no salir de casa en ayunas y con el estómago lleno de café.",
+                "Si firmas a las 5:00, para tu cuerpo sigue siendo de noche: si comes algo entre las 00:00 y las 6:00, que sea pequeño y fácil de digerir. En un estudio de turnos de noche, a esas horas rendían mejor quienes tomaban algo ligero que quienes hacían una comida completa.[gupta]",
+                "Si a esas horas no te entra nada, no te fuerces: llévate el desayuno y tómalo en el primer salto.",
+                "Y si quieres algo que te sostenga sin comer, prueba un café bullet: café con un poco de mantequilla o ghee y aceite MCT. El aceite MCT, sobre todo el de ácido caprílico (C8), se convierte enseguida en cuerpos cetónicos, que tu cuerpo usa como energía, y en ayunas esa subida es mayor.[stpierre] Empieza con poca cantidad: a algunas personas el MCT les sienta mal al estómago, y en el avión no siempre puedes ir al baño cuando quieres.",
             ],
-            "list_h": "Ideas para ese primer desayuno",
+            "list_h": "Si te apetece algo antes de salir",
             "list": [
                 "Un yogur natural o kéfir con fruta.",
                 "Una tostada de pan de masa madre con aceite de oliva y tomate.",
                 "Un vaso de leche o de bebida vegetal con unos frutos secos.",
-                "Un huevo cocido, preparado la noche antes.",
             ],
         },
         {
@@ -496,8 +497,8 @@ CORTO = {
             "h2": "Líquidos y electrolitos durante el día",
             "ps": [
                 "El aire de cabina es muy seco[martingill] y en las rotaciones es fácil pasar horas sin beber. Lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
-                "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, la leche y las soluciones de rehidratación oral se retenían bastante más que el agua; las bebidas para deportistas, en cambio, no se diferenciaron del agua.[bhi]",
-                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y un yogur, un kéfir o un vaso de leche. En días de mucho calor o mucho trabajo, los sobres de suero oral en polvo de farmacia son una opción: se mezclan con el agua de tu botella. Consulta con un profesional cómo tomarlos.",
+                "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, la leche se retenía bastante más que el agua; las bebidas para deportistas, en cambio, no se diferenciaron del agua.[bhi]",
+                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y un yogur, un kéfir o un vaso de leche. Y en tu botella, una pizca de sal: cuánta, te lo cuento en mi <a href=\"/tripulaciones/\">guía gratuita para tripulaciones</a>. Los sobres de farmacia y las bebidas para deportistas suelen llevar azúcar, así que para el día a día no los necesitas.",
             ],
         },
         {
@@ -530,13 +531,13 @@ CORTO = {
         },
     ],
     "faq": [
-        ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica."),
+        ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica, así que si no te entra nada, llévatelo y tómalo más tarde."),
         ("¿Qué comer en un día de cuatro o seis saltos?", "Cosas que se comen en cinco minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, cuando haya hueco en una escala o después del servicio."),
-        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado) y un yogur, un kéfir o un vaso de leche. En un ensayo, la leche y las soluciones de rehidratación oral se retenían más que el agua."),
+        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado), un yogur, un kéfir o un vaso de leche, y pon una pizca de sal en tu botella. En un ensayo, la leche se retenía más que el agua."),
         ("¿Es seguro el agua caliente del avión?", "El agua de los depósitos no siempre está en buenas condiciones: en un estudio se encontraron bacterias de muchas especies. Para algo caliente, mejor la comida que calientas en el horno del avión."),
         ("¿Cuándo dejar el café si madrugo al día siguiente?", "Tómalo en la primera mitad de la jornada y deja al menos 6 horas sin cafeína antes de acostarte."),
     ],
-    "sources": ["arsintescu", "akerstedt", "steven", "gupta", "martingill", "bhi", "aguavion", "drake", "vejvoda"],
+    "sources": ["arsintescu", "akerstedt", "steven", "gupta", "stpierre", "martingill", "bhi", "aguavion", "drake", "vejvoda"],
     "cta": {
         "cta_h": "¿Vuelas en corto radio?",
         "cta_p": "En consulta preparamos tu plan según tu programación: qué comer en cada tipo de firma, cómo encadenar madrugones y cómo recuperar en tus libres. Online, en castellano o en inglés.",
@@ -579,17 +580,17 @@ CORTO_EN = {
             ],
         },
         {
-            "h2": "Before you report: a light breakfast",
+            "h2": "Before you report: something light, or nothing",
             "ps": [
-                "If you report at 5am, your body still thinks it's night: between midnight and 6am, keep it small and easy to digest. In a night shift study, people who had a light snack in the early hours performed better than those who had a full meal or ate nothing.[gupta]",
-                "The key is not to leave home on an empty stomach and a lot of coffee.",
+                "If you report at 5am, your body still thinks it's night: if you eat between midnight and 6am, keep it small and easy to digest. In a night shift study, people who had a light snack in the early hours performed better than those who had a full meal.[gupta]",
+                "If you can't face food at that hour, don't force it: take your breakfast with you and have it on the first sector.",
+                "And if you want something to keep you going without eating, try a bulletproof coffee: coffee with a little butter or ghee and MCT oil. MCT oil, especially the caprylic acid kind (C8), is quickly turned into ketones, which your body uses for energy, and the rise is bigger on an empty stomach.[stpierre] Start with a small amount: MCT upsets some people's stomachs, and on board you can't always get to the toilet when you need to.",
             ],
-            "list_h": "Ideas for that first breakfast",
+            "list_h": "If you fancy something before you leave",
             "list": [
                 "Natural yoghurt or kefir with fruit.",
                 "Sourdough toast with olive oil and tomato.",
                 "A glass of milk or a plant drink with a few nuts.",
-                "A boiled egg, made the night before.",
             ],
         },
         {
@@ -612,8 +613,8 @@ CORTO_EN = {
             "h2": "Fluids and electrolytes through the day",
             "ps": [
                 "Cabin air is very dry[martingill] and on a busy day it's easy to go hours without drinking. Bring your own bottle and have a little on every sector, without waiting until you're thirsty.",
-                "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that milk and oral rehydration solutions were retained much better than water, while sports drinks were no different from water.[bhi]",
-                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and a yoghurt, a kefir or a glass of milk. On very hot or very busy days, oral rehydration sachets from the pharmacy are an option: you mix the powder with the water in your bottle. Ask a professional how to take them.",
+                "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that milk was retained much better than water, while sports drinks were no different from water.[bhi]",
+                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and a yoghurt, a kefir or a glass of milk. And add a pinch of salt to your bottle: how much, I explain in my <a href=\"/en/cabin-crew/\">free cabin crew guide</a>. Pharmacy sachets and sports drinks usually contain sugar, so you don't need them day to day.",
             ],
         },
         {
@@ -646,9 +647,9 @@ CORTO_EN = {
         },
     ],
     "faq": [
-        ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, toast with olive oil or a glass of milk with a few nuts. At that hour your body is still in its biological night."),
+        ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, toast with olive oil or a glass of milk with a few nuts. At that hour your body is still in its biological night, so if you can't face food, take it with you and have it later."),
         ("What should cabin crew eat on a four or six sector day?", "Food you can eat in five minutes without cutlery, like boiled eggs, fruit, nuts or vegetable sticks with hummus, spread across the sectors. Have your main meal when there's a gap on a turnaround or after the service."),
-        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty) and a yoghurt, a kefir or a glass of milk. In one trial, milk and oral rehydration solutions were retained better than water."),
+        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty), a yoghurt, a kefir or a glass of milk, and add a pinch of salt to your bottle. In one trial, milk was retained better than water."),
         ("Is the hot water on a plane safe to drink?", "The water in aircraft tanks isn't always in good condition: one study found many species of bacteria. For something hot, go for the food you heat in the aircraft oven."),
         ("When should I stop caffeine if I have an early tomorrow?", "Have it in the first half of your duty and leave at least 6 hours without caffeine before bed."),
     ],
