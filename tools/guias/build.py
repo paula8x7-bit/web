@@ -26,12 +26,6 @@ ES = {
             ("Artículo", "TCP de corto radio: qué comer", "El desayuno cuando firmas a las 5:00, qué llevar para varios saltos y cómo encadenar madrugones.", "/tcp-corto-radio-que-comer/", None),
             ("Guía gratuita", "Guía para tripulaciones de largo radio", "Jet lag, comida a bordo, sueño y analíticas para escalas de 24 a 72 horas.", "/tripulaciones/", "/assets/guias/portada-guia-tripulaciones.webp|contain"),
         ]),
-        ("Consulta online en tu ciudad", [
-            ("Consulta", "Nutricionista online en Madrid", "Videollamada o plan en la app, y la analítica en un centro de Madrid.", "/nutricionista-online/madrid/", None),
-            ("Consulta", "Nutricionista online en Barcelona", "Videollamada o plan en la app, y la analítica en un centro de Barcelona.", "/nutricionista-online/barcelona/", None),
-            ("Consulta", "Nutricionista online en Vigo", "Videollamada o plan en la app, y la analítica en un centro de Vigo.", "/nutricionista-online/vigo/", None),
-            ("Consulta", "Nutricionista online en Santander", "Videollamada o plan en la app, y la analítica en un centro de Santander.", "/nutricionista-online/santander/", None),
-        ]),
         ("Planes de 4 semanas", [
             ("Plan", "Come según tu ciclo", "La comida ordenada por el día de tu ciclo: regla, folicular, ovulación y lútea.", "/planes/come-segun-tu-ciclo/", "/assets/planes/46efbd82-da71-467f-8074-0579563f8faa.webp"),
             ("Plan", "Glow, piel luminosa desde dentro", "Cuatro semanas de comida para la piel: colágeno, barrera, minerales y color.", "/planes/glow/", "/assets/planes/37793bec-6f56-455e-ad92-1e6d8d0a0fdc.webp"),
@@ -63,15 +57,12 @@ EN = {
             ("Article", "Short haul cabin crew: what to eat", "Breakfast before a 5am report, what to pack for multi sector days and how to cope with a run of earlies.", "/en/short-haul-cabin-crew-food/", None),
             ("Free guide", "Guide for long haul cabin crew", "Jet lag, food on board, sleep and blood tests for 24 to 72 hour layovers.", "/en/cabin-crew/", "/assets/guias/cabin-crew-guide-cover.webp|contain"),
         ]),
-        ("Online consultations in Spain", [
-            ("Consultation", "English speaking nutritionist in Madrid", "Video call or a plan in the app, and your blood test at a centre in Madrid.", "/en/nutritionist/madrid/", None),
-            ("Consultation", "English speaking nutritionist in Barcelona", "Video call or a plan in the app, and your blood test at a centre in Barcelona.", "/en/nutritionist/barcelona/", None),
-            ("Consultation", "English speaking nutritionist in Vigo", "Video call or a plan in the app, and your blood test at a centre in Vigo.", "/en/nutritionist/vigo/", None),
-            ("Consultation", "English speaking nutritionist in Santander", "Video call or a plan in the app, and your blood test at a centre in Santander.", "/en/nutritionist/santander/", None),
-        ]),
     ],
     "note": 'My plans and recipes are in Spanish for now. If you read Spanish, you\'ll find them <a href="/guias/" hreflang="es" style="color:#5e1a24;border-bottom:1px solid #c9b578">here</a>.',
 }
+
+ES["cities"] = 'También paso consulta online en <a href="/nutricionista-online/madrid/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Madrid</a>, <a href="/nutricionista-online/barcelona/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Barcelona</a>, <a href="/nutricionista-online/vigo/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Vigo</a> y <a href="/nutricionista-online/santander/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Santander</a>.'
+EN["cities"] = 'I also offer online consultations in English in <a href="/en/nutritionist/madrid/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Madrid</a>, <a href="/en/nutritionist/barcelona/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Barcelona</a>, <a href="/en/nutritionist/vigo/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Vigo</a> and <a href="/en/nutritionist/santander/" style="color:#5e1a24;border-bottom:1px solid #c9b578">Santander</a>.'
 
 glow = (ROOT / "planes/glow/index.html").read_text()
 en_home = (ROOT / "en/index.html").read_text()
@@ -132,6 +123,9 @@ def page(t, lang):
         for name, cards in t["sections"])
     note = (f'<p style="{F_JOST};font-weight:300;font-size:16px;line-height:1.7;color:#5c5a4f;max-width:1240px;margin:0 auto">{t["note"]}</p>'
             if t["note"] else "")
+    cities = (f'<p style="{F_JOST};font-weight:300;font-size:14px;line-height:1.7;color:#8a877a;max-width:1240px;margin:clamp(24px,3vw,40px) auto 0">{t["cities"]}</p>'
+              if t.get("cities") else "")
+    note = note + cities
     items = [c for _, cards in t["sections"] for c in cards]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": url + "#pagina", "url": url, "name": t["h1"], "description": t["desc"],
