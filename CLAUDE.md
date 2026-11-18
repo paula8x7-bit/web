@@ -11,6 +11,16 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - Si añades una página: enlázala desde el pie o desde otra página, añádela a `sitemap.xml` y recuérdale pedir la indexación en Search Console.
 - Analítica con Umami. Añadiendo `?soy-paula` a cualquier URL, sus propias visitas no cuentan. Las acciones importantes llevan `data-umami-event`.
 
+## Criterio clínico: la biblioteca de Paula manda
+
+Paula tiene su biblioteca clínica (su Obsidian de nutrición) en el repositorio privado **urecio/nutrition-brain**: apuntes de sus cursos, libros y criterios propios. Antes de escribir cualquier contenido de salud o nutrición:
+
+1. Añade ese repositorio a la sesión (add_repo, solo lectura) y busca ahí el tema (grep por palabras clave en castellano e inglés).
+2. **Lo que diga la biblioteca y los criterios de Paula prevalecen** sobre lo que se sabe en general o sobre las recomendaciones oficiales. Si algo choca, sigue la biblioteca y avísale del choque en el resumen, en lugar de escribir la versión convencional. El curso del CEAN es la excepción: es muy convencional y no se usa como referencia principal.
+3. Nada de afirmaciones que no estén ni en la biblioteca ni en un estudio: si no lo encuentras, no lo escribas, o pregúntale.
+4. El material de los cursos es privado: se usa para entender el tema, pero en la web no se copia literal ni se cita como fuente. En la página, las fuentes públicas siguen siendo estudios de PubMed con DOI.
+5. Si no puedes acceder al repositorio, **para y díselo** antes de escribir nada de salud.
+
 ## Cómo escribir (textos de cara al público)
 
 - En primera persona, con la voz de Paula: frases cortas y concretas, cercana y profesional. Se permite algún diminutivo («tomatitos», «cositas»).
