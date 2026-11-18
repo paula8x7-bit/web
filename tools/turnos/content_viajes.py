@@ -1,6 +1,7 @@
 # Textos de los artículos de viajes y jet lag (castellano). Se generan con tools/turnos/build.py.
 
 SRC_VIAJES = {
+    "hobson": ("Hobson RM, Maughan RJ. Hydration status and the diuretic action of a small dose of alcohol. Alcohol and Alcoholism, 2010.", "https://doi.org/10.1093/alcalc/agq029"),
     "martingill": ("Martin-Gill C y cols. In-flight medical emergencies: a review. JAMA, 2018.", "https://doi.org/10.1001/jama.2018.19842"),
     "hinning": ("Hinninghofen H, Enck P. Passenger well-being in airplanes. Autonomic Neuroscience, 2006.", "https://doi.org/10.1016/j.autneu.2006.07.018"),
     "mitter": ("Mittermayr M y cols. Leg edema formation and venous blood flow velocity during a simulated long-haul flight. Thrombosis Research, 2007.", "https://doi.org/10.1016/j.thromres.2006.12.012"),
@@ -53,7 +54,7 @@ JETLAG = {
             "h2": "En el avión: vive ya en la hora de destino",
             "ps": [
                 "En cuanto subas, pon el reloj en la hora del destino y organízate según esa hora. Si allí es de noche, intenta dormir: antifaz, tapones y nada de pantallas. Si allí es de día, aguanta despierto, aunque sea con alguna siesta corta.",
-                "Bebe agua durante todo el vuelo. Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
+                "Bebe agua durante todo el vuelo. Y el alcohol, en realidad, no ayuda a dormir.[ebrahim] Además, te hace orinar más y concentra la sangre, así que con el aire seco de cabina te deshidrata todavía más.[hobson]",
                 "Qué comer antes de salir y qué llevar te lo cuento en <a href=\"/que-comer-antes-de-un-vuelo-largo/\">qué comer antes de un vuelo largo</a>.",
             ],
         },
@@ -102,7 +103,7 @@ JETLAG = {
         ("¿Qué síntomas tiene el jet lag?", "Dormir mal, cansancio durante el día, rendir menos, problemas de digestión y malestar general."),
         ("¿Funciona la melatonina para el jet lag?", "Es lo que más evidencia tiene, sobre todo en vuelos de cinco o más husos hacia el este, tomada cerca de la hora de acostarse en el destino. Antes de tomarla, consúltalo con un profesional."),
     ],
-    "sources": ["herxbmj", "burgess", "ebrahim", "wehrens", "drake", "cochrane"],
+    "sources": ["herxbmj", "burgess", "ebrahim", "hobson", "wehrens", "drake", "cochrane"],
     "cta": {
         "cta_h": "¿Viajas mucho por trabajo?",
         "cta_p": "En consulta preparamos tu plan para cada viaje: horarios de sueño, luz y comidas según tus rutas, con tus síntomas y tus analíticas delante. Online, en castellano o en inglés.",
@@ -183,7 +184,7 @@ JETLAG_EN = {
             "h2": "On the plane",
             "ps": [
                 "If you're staying several days, set your watch to destination time as soon as you board. If it's night there, try to sleep: eye mask, earplugs and no screens.",
-                "Drink water throughout the flight. And alcohol doesn't actually help you sleep.[ebrahim]",
+                "Drink water throughout the flight. And alcohol doesn't actually help you sleep.[ebrahim] It also makes you pee more and concentrates your blood, so in dry cabin air it dehydrates you even more.[hobson]",
             ],
         },
         {
@@ -216,7 +217,7 @@ JETLAG_EN = {
         ("Does melatonin work for jet lag?", "It has the most evidence, especially on flights across five or more time zones going east, taken close to bedtime at the destination. Check with a professional before taking it."),
         ("What if I'm cabin crew or a pilot?", "On layovers under 48 hours, don't adjust to local time: sleep as close as you can to your home night and eat on home time. Getting back home is much easier."),
     ],
-    "sources": ["herxbmj", "travel", "burgess", "wehrens", "ebrahim", "drake", "cochrane"],
+    "sources": ["herxbmj", "travel", "burgess", "wehrens", "ebrahim", "hobson", "drake", "cochrane"],
     "cta": {
         "cta_h": "Do you travel a lot for work?",
         "cta_p": "In my consultations we plan each trip with you: sleep, light and meal times for your routes, with your symptoms and blood tests in front of us. Online, in English or Spanish.",
@@ -281,7 +282,7 @@ VUELO = {
             "h2": "Agua, a sorbos",
             "ps": [
                 "El aire de cabina es muy seco.[martingill] Bebe agua a sorbos y de forma regular, sin esperar a tener sed. Las infusiones también cuentan.",
-                "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
+                "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim] Además, te hace orinar más y concentra la sangre, así que con un aire tan seco te deshidrata todavía más.[hobson]",
             ],
         },
         {
@@ -308,7 +309,7 @@ VUELO = {
         ("¿Por qué se me hinchan las piernas en el avión?", "Sobre todo por pasar muchas horas sentado. Levantarte, pasear y mover los tobillos ayuda, y las medias de compresión también pueden ayudar."),
         ("¿Por qué me estriño cuando viajo?", "Por el cambio de horarios, beber menos, estar sentado y comer distinto. Agua, fruta como el kiwi, verdura y movimiento son lo que mejor funciona."),
     ],
-    "sources": ["hinning", "martingill", "ebrahim", "mitter", "medias", "kiwi"],
+    "sources": ["hinning", "martingill", "ebrahim", "hobson", "mitter", "medias", "kiwi"],
 }
 
 VUELO["cta"] = JETLAG["cta"]
