@@ -23,7 +23,7 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - Nunca enlaces a productos (Amazon, tiendas, marcas). El nombre del producto puede ir como texto.
 - **Nunca se publican dosis** de suplementos ni medicamentos (melatonina, etc.): se dice qué dice la evidencia y se remite a consultarlo con un profesional.
 - Todo dato de salud se contrasta con fuentes (PubMed, con su DOI) y las fuentes van listadas al final de la página. Nada de memoria.
-- Diagnoseum (empresa de analíticas de la que Paula es cofundadora): se menciona para quien vive en España, también en las páginas en inglés (hay muchos extranjeros en España que buscan en inglés). Fórmula aprobada: «eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins». En inglés: «you choose exactly what you want to test, no doctor's referral needed, backed by Eurofins». Nunca «tu médico no sabe/no mide esto». Los enlaces a diagnoseum.com llevan parámetros `utm_`.
+- Diagnoseum (empresa de analíticas de la que Paula es cofundadora): se menciona para quien vive en España, también en las páginas en inglés (hay muchos extranjeros en España que buscan en inglés). Fórmula aprobada: «eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins». En inglés: «you choose exactly what you want to test, no doctor's referral needed, backed by Eurofins». Nunca «tu médico no sabe/no mide esto». Los enlaces a diagnoseum.com llevan parámetros `utm_`. Quien compra en Diagnoseum puede sacarse la sangre en **cualquier centro Eurofins** de España (el catálogo de la app solo muestra una dirección de referencia en Madrid).
 
 ## Estructura
 
