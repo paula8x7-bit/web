@@ -85,6 +85,8 @@ a:hover{color:#6f7a4d}
 button{border:none;background:none;cursor:pointer;font:inherit}
 [data-sec]{scroll-margin-top:84px}
 [data-burger]{display:none}
+[data-nav-desktop] a{white-space:nowrap}
+@media(max-width:1100px){nav[data-nav-desktop]{gap:20px!important}nav[data-nav-desktop] a{font-size:13px!important;letter-spacing:.1em!important}}
 #mobile-menu{display:none}
 #mobile-menu.open{display:flex}
 @media(max-width:900px){
@@ -128,6 +130,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
       <a href="#sobre-mi" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">About</a>
       <a href="#servicios" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Services</a>
       <a href="#planes" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Plans</a>
+      <a href="/en/guides/" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Guides</a>
       <a href="#contacto" data-hover="color:#6f7a4d" style="font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#3c3b34;font-weight:400">Contact</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;flex:0 0 auto">
@@ -148,6 +151,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
     <a class="close-menu" href="#sobre-mi" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">About</a>
     <a class="close-menu" href="#servicios" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Services</a>
       <a class="close-menu" href="#planes" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Plans</a>
+    <a class="close-menu" href="/en/guides/" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Guides</a>
     <a class="close-menu" href="#contacto" style="font-family:'Jost',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#3c3b34;padding:14px 0;border-bottom:1px solid #e7dfc9">Contact</a>
     <div style="display:flex;align-items:center;gap:10px;padding:14px 0;font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase">
       <a class="close-menu" href="/" style="color:#8a8470">ES</a>
@@ -416,7 +420,7 @@ button{border:none;background:none;cursor:pointer;font:inherit}
         <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(24px,3.2vw,44px);color:#3c3b34;line-height:1.1">Discover my <span style="font-style:italic;color:#6f7a4d">guides</span></h2>
         <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(14px,1.2vw,17px);color:#5c5a4f;margin-top:8px">Plans, recipes and resources to take care of yourself every day.</p>
       </div>
-      <a href="#planes" data-hover="background:#5e1a24;color:#f7f1e6;border-color:#5e1a24" style="flex:0 0 auto;white-space:nowrap;display:inline-flex;align-items:center;gap:12px;background:transparent;color:#5e1a24;border:1px solid #a4894f;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:15px 26px;border-radius:2px;transition:all .25s">View guides & resources&nbsp;→</a>
+      <a href="/en/guides/" data-umami-event="ver-guias" data-hover="background:#5e1a24;color:#f7f1e6;border-color:#5e1a24" style="flex:0 0 auto;white-space:nowrap;display:inline-flex;align-items:center;gap:12px;background:transparent;color:#5e1a24;border:1px solid #a4894f;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:15px 26px;border-radius:2px;transition:all .25s">View guides & resources&nbsp;→</a>
     </div>
   </div>
 </section>

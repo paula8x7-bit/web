@@ -31,6 +31,8 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - `tripulaciones/` y `en/cabin-crew/`: páginas de la guía gratuita para tripulaciones, con formulario. Se generan con `python3 tools/crew/build.py` (textos en `tools/crew/content.py`).
 - `turnos/`: bloque de trabajo a turnos (página general y dos artículos). Se genera con `python3 tools/turnos/build.py` (textos y fuentes en `tools/turnos/content.py`; los artículos en inglés, en `tools/turnos/content_en.py`, con `lang`, y `alt` para la página gemela). Las citas se escriben `[clave]` en el texto y se convierten en notas numeradas.
 - Las páginas generadas copian la cabecera y el pie de `planes/glow/index.html` (castellano) o de `en/index.html` (inglés). Si cambias el pie, cámbialo en todas las páginas y vuelve a generar.
+- `guias/` y `en/guides/`: índice de guías y recursos (lleva a él «Guías» del menú y el botón del banner de la portada). Se genera con `python3 tools/guias/build.py`. **Cada página nueva que se publique se añade a su lista** y se vuelve a generar.
+- El menú de arriba está copiado en cada página: si se cambia, hay que cambiarlo en todas y volver a generar.
 - `tools/crew/emails.py`: genera el HTML de los correos de Brevo (en `tools/crew/emails/`). Si se cambian, hay que pegarlos también en Brevo.
 
 ## Guía gratuita y correos (Brevo)
