@@ -11,8 +11,6 @@ SRC = {
     "smith": ("Smith MR, Fogg LF, Eastman CI. Practical interventions to promote circadian adaptation to permanent night shift work. Journal of Biological Rhythms, 2009.", "https://doi.org/10.1177/0748730409332068"),
     "jackson": ("Jackson EJ, Moreton A. Safety during night shifts: a cross-sectional survey of junior doctors' preparation and practice. BMJ Open, 2013.", "https://doi.org/10.1136/bmjopen-2013-003567"),
     "ebrahim": ("Ebrahim IO y cols. Alcohol and sleep I: effects on normal sleep. Alcoholism: Clinical and Experimental Research, 2013.", "https://doi.org/10.1111/acer.12006"),
-    "pietila": ("Pietilä J y cols. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep in a large real-world sample of Finnish employees. JMIR Mental Health, 2018.", "https://doi.org/10.2196/mental.9519"),
-    "gbd": ("GBD 2016 Alcohol Collaborators. Alcohol use and burden for 195 countries and territories, 1990-2016: a systematic analysis for the Global Burden of Disease Study 2016. The Lancet, 2018.", "https://doi.org/10.1016/S0140-6736(18)31310-2"),
     "ine": ("Redacción Médica, con datos del INE: más de 2,4 millones de personas trabajaron en turno de noche en España en 2022.", "https://www.redaccionmedica.com/ultimas-noticias/20240310/trabajar-de-noche-turnos-perjudica-gravemente-la-salud-acorta-vida-un-empeora-su-calidad/116394_0.amp.html"),
 }
 
@@ -78,7 +76,7 @@ COMER = {
             "h2": "Al salir: un desayuno ligero y a dormir",
             "ps": [
                 "Si llegas con hambre, toma algo pequeño para que no te despierte a media mañana: un yogur, una tostada con aceite, un vaso de leche o bebida vegetal. Deja la comida fuerte para cuando te levantes.",
-                "Nada de alcohol para dormir. Te ayuda a caer rendido, pero rompe la segunda mitad de la noche: más despertares y menos sueño REM.[ebrahim] Incluso en poca cantidad, el cuerpo se recupera peor mientras duermes.[pietila]",
+                "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
             ],
         },
         {
@@ -95,7 +93,7 @@ COMER = {
         ("¿Qué llevo en el táper para el turno de noche?", "Para la mitad del turno, cosas ligeras: un caldo o una crema en termo, yogur con fruta, huevos cocidos, hummus con verdura cruda o un puñado de frutos secos."),
         ("¿Hasta qué hora puedo tomar café si trabajo de noche?", "Tómalo en la primera mitad del turno y deja al menos 6 horas sin cafeína antes de irte a dormir."),
     ],
-    "sources": ["chellappa", "grant", "grosser", "gupta", "drake", "ebrahim", "pietila", "phoi"],
+    "sources": ["chellappa", "grant", "grosser", "gupta", "drake", "ebrahim", "phoi"],
 }
 
 DORMIR = {
@@ -136,7 +134,7 @@ DORMIR = {
             "ps": [
                 "Nada de cafeína en las 6 horas antes de dormir.[drake] Si tomas café a las cinco de la mañana y te acuestas a las nueve, te va a costar.",
                 "Llega a la cama sin hambre, pero sin una comida pesada: un yogur o una tostada bastan. Te lo explico con detalle en <a href=\"/turnos/que-comer-en-el-turno-de-noche/\">qué comer en el turno de noche</a>.",
-                "Y nada de alcohol. Te ayuda a dormirte, pero rompe la segunda mitad de la noche: más despertares y menos sueño REM.[ebrahim] Incluso en poca cantidad, el cuerpo se recupera peor mientras duermes.[pietila] Y no hay una cantidad saludable: en el mayor análisis mundial, la cantidad de alcohol que menos daño hacía a la salud era cero.[gbd]",
+                "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
             ],
         },
         {
@@ -158,7 +156,7 @@ DORMIR = {
         ("¿Es malo dormir de día?", "Dormir de día cuesta más porque va contra el reloj interno, pero se puede dormir bien si cuidas la luz al volver, la oscuridad del cuarto y un horario fijo."),
         ("¿Me conviene una siesta antes del turno de noche?", "Sí, sobre todo antes de la primera noche. Una siesta por la tarde reduce el cansancio con el que empiezas el turno."),
     ],
-    "sources": ["eastman", "smith", "drake", "ebrahim", "pietila", "gbd", "jackson"],
+    "sources": ["eastman", "smith", "drake", "ebrahim", "jackson"],
 }
 
 HUB = {

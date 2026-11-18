@@ -91,7 +91,7 @@ EAT_EN = {
             "h2": "After your shift: a light breakfast, then sleep",
             "ps": [
                 "If you get home hungry, have something small so it doesn't wake you mid morning: a yoghurt, toast with olive oil, a glass of milk or a plant drink. Save the proper meal for when you get up.",
-                "No alcohol to help you sleep. It helps you drop off, but it breaks up the second half of the night: more waking and less REM sleep.[ebrahim] Even small amounts mean your body recovers less while you sleep.[pietila]",
+                "And alcohol doesn't actually help you sleep.[ebrahim]",
             ],
         },
         {
@@ -116,7 +116,7 @@ EAT_EN = {
         ("What's a good night shift eating schedule?", "For a 20:00 to 08:00 shift: main meal at 17:00 or 18:00, a light snack around midnight, only something small after 2am if you need it, and a small breakfast before bed."),
         ("When should I stop caffeine on a night shift?", "Have it in the first half of your shift and leave at least 6 hours without caffeine before you go to sleep."),
     ],
-    "sources": ["chellappa", "grant", "grosser", "gupta", "drake", "ebrahim", "pietila", "sun", "zhang", "phoi"],
+    "sources": ["chellappa", "grant", "grosser", "gupta", "drake", "ebrahim", "sun", "zhang", "phoi"],
 }
 
 SLEEP_EN = {
@@ -159,7 +159,7 @@ SLEEP_EN = {
             "ps": [
                 "No caffeine in the 6 hours before sleep.[drake] If you have a coffee at 5am and go to bed at 9am, you'll struggle.",
                 "Go to bed neither hungry nor full: a yoghurt or a slice of toast is enough. I go into detail in <a href=\"/en/what-to-eat-on-night-shift/\">what to eat on night shift</a>.",
-                "And no alcohol. It helps you drop off, but it breaks up the second half of the night: more waking and less REM sleep.[ebrahim] Even small amounts mean your body recovers less while you sleep.[pietila] And there is no healthy amount: in the largest global analysis, the amount of alcohol that did the least harm to health was zero.[gbd]",
+                "And alcohol doesn't actually help you sleep.[ebrahim]",
             ],
         },
         {
@@ -181,5 +181,5 @@ SLEEP_EN = {
         ("Is it bad to sleep during the day?", "Sleeping during the day is harder because it goes against your internal clock, but you can sleep well if you look after the light on the way home, the darkness of your room and a fixed bedtime."),
         ("Should I nap before a night shift?", "Yes, especially before your first night. An afternoon nap reduces the tiredness you start your shift with."),
     ],
-    "sources": ["eastman", "smith", "drake", "ebrahim", "pietila", "gbd", "jackson"],
+    "sources": ["eastman", "smith", "drake", "ebrahim", "jackson"],
 }
