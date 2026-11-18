@@ -4,6 +4,8 @@ Web estática (HTML y CSS a mano, sin framework) publicada con GitHub Pages en h
 
 Paula es nutricionista integrativa y sobrecargo de largo radio. No es programadora: explícale las cosas sin jerga y avísale si algo puede poner en riesgo sus datos.
 
+**Lo primero en cada sesión: intenta acceder a su biblioteca clínica (el «brain», repositorio urecio/nutrition-brain).** Sin ella no se escribe nada de salud ni de nutrición. Mira la sección «Criterio clínico».
+
 ## Reglas de trabajo
 
 - **Nunca publiques sin su OK.** Enseña antes capturas (ordenador y móvil) o una vista previa, y espera a que diga que sí. Después de publicar, comprueba que la página responde en la web real.
@@ -15,11 +17,20 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 
 Paula tiene su biblioteca clínica (su Obsidian de nutrición) en el repositorio privado **urecio/nutrition-brain**: apuntes de sus cursos, libros y criterios propios. Antes de escribir cualquier contenido de salud o nutrición:
 
-1. Añade ese repositorio a la sesión (add_repo, solo lectura) y busca ahí el tema (grep por palabras clave en castellano e inglés).
+1. Añade ese repositorio a la sesión (add_repo, solo lectura) y busca ahí el tema (grep por palabras clave en castellano e inglés). Si add_repo falla pero la sesión está conectada a su Mac, está también en su ordenador, en la carpeta `sources/nutrition-brain` de su usuario. Empieza por `Cursos nutri/Temas/`, que tiene un resumen por tema; después, `Cursos`, `Libros` y `Transcripciones`.
 2. **Lo que diga la biblioteca y los criterios de Paula prevalecen** sobre lo que se sabe en general o sobre las recomendaciones oficiales. Si algo choca, sigue la biblioteca y avísale del choque en el resumen, en lugar de escribir la versión convencional. El curso del CEAN es la excepción: es muy convencional y no se usa como referencia principal.
 3. Nada de afirmaciones que no estén ni en la biblioteca ni en un estudio: si no lo encuentras, no lo escribas, o pregúntale.
 4. El material de los cursos es privado: se usa para entender el tema, pero en la web no se copia literal ni se cita como fuente. En la página, las fuentes públicas siguen siendo estudios de PubMed con DOI.
 5. Si no puedes acceder al repositorio, **para y díselo** antes de escribir nada de salud.
+
+Criterios que Paula ya ha decidido (noviembre de 2026):
+
+- **Leche, no.** No se recomienda un vaso de leche: sí yogur y kéfir.
+- **Electrolitos:** agua con una pizca de sal (la cantidad, en su guía) y comida salada. Nada de sobres de farmacia ni bebidas para deportistas, que suelen llevar azúcar.
+- **Ayuno:** no decir que está mal ir a trabajar en ayunas. Si a esas horas no entra nada, no forzarse. El café bullet (café con mantequilla o ghee y aceite MCT) vale como opción, empezando con poca cantidad.
+- **TCA:** nada de mensajes de «comer menos», quitar el hambre o restringir. Cuidado con los textos centrados en el peso.
+- **Agua caliente del avión:** no se recomienda (ni para infusiones).
+- **Tortitas de maíz:** sí valen. Las de arroz, mejor no.
 
 ## Cómo escribir (textos de cara al público)
 
