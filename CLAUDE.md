@@ -33,6 +33,7 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - `turnos/`: bloque de trabajo a turnos (página general y dos artículos). Se genera con `python3 tools/turnos/build.py` (textos y fuentes en `tools/turnos/content.py`; los artículos en inglés, en `tools/turnos/content_en.py`, con `lang`, y `alt` para la página gemela). El mismo generador hace los artículos de viajes, como `/jet-lag/` (textos en `tools/turnos/content_viajes.py`); con `trail` y `cta` se cambian las migas y el recuadro final de cada página. Las citas se escriben `[clave]` en el texto y se convierten en notas numeradas.
 - Las páginas generadas copian la cabecera y el pie de `planes/glow/index.html` (castellano) o de `en/index.html` (inglés). Si cambias el pie, cámbialo en todas las páginas y vuelve a generar.
 - `guias/` y `en/guides/`: índice de guías y recursos (lleva a él «Guías» del menú y el botón del banner de la portada). Se genera con `python3 tools/guias/build.py`. **Cada página nueva que se publique se añade a su lista** y se vuelve a generar.
+- `nutricionista-online/{ciudad}/` y `en/nutritionist/{ciudad}/`: páginas de consulta online por ciudad (ES y EN, gemelas). Se generan con `python3 tools/ciudades/build.py`; para añadir una ciudad, se añade a `CIUDADES`, al índice de guías y al sitemap.
 - El menú de arriba está copiado en cada página: si se cambia, hay que cambiarlo en todas y volver a generar.
 - `tools/crew/emails.py`: genera el HTML de los correos de Brevo (en `tools/crew/emails/`). Si se cambian, hay que pegarlos también en Brevo.
 
@@ -67,6 +68,7 @@ Hecho:
 4a. Jet lag: `/jet-lag/` y `/en/jet-lag/` (para viajeros; aviso para TCP con escalas cortas y la regla de las 48 horas).
 4b. «Qué comer antes de un vuelo largo»: `/que-comer-antes-de-un-vuelo-largo/` (líquidos en el control: depende de cada aeropuerto, remitir a confirmarlo con su seguridad).
 4c. «Cabin crew meal prep»: `/en/cabin-crew-meal-prep/` (a partir de la guía en inglés).
+5a. Ciudades, primera tanda: Madrid, Barcelona, Vigo y Santander, en castellano y en inglés. Esperar a ver en Search Console si funcionan antes de hacer más.
 
 Siguiente, por orden:
 5. **Ciudades**: «nutricionista integrativa online en {ciudad}» (Madrid, Barcelona, Valencia, Sevilla, Bilbao, Zaragoza, Málaga, Alicante, Granada, Valladolid, Oviedo, Gijón). Cada una con contenido local real (los laboratorios de Diagnoseum de esa ciudad) para que no sean páginas copiadas.

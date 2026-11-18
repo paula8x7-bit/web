@@ -25,6 +25,12 @@ ES = {
             ("Artículo", "Qué comer antes de un vuelo largo", "Qué llevar al avión y cómo evitar la hinchazón, las piernas pesadas y el estreñimiento.", "/que-comer-antes-de-un-vuelo-largo/", None),
             ("Guía gratuita", "Guía para tripulaciones de largo radio", "Jet lag, comida a bordo, sueño y analíticas para escalas de 24 a 72 horas.", "/tripulaciones/", "/assets/guias/portada-guia-tripulaciones.webp|contain"),
         ]),
+        ("Consulta online en tu ciudad", [
+            ("Consulta", "Nutricionista online en Madrid", "Videollamada o plan en la app, y la analítica en un centro de Madrid.", "/nutricionista-online/madrid/", None),
+            ("Consulta", "Nutricionista online en Barcelona", "Videollamada o plan en la app, y la analítica en un centro de Barcelona.", "/nutricionista-online/barcelona/", None),
+            ("Consulta", "Nutricionista online en Vigo", "Videollamada o plan en la app, y la analítica en un centro de Vigo.", "/nutricionista-online/vigo/", None),
+            ("Consulta", "Nutricionista online en Santander", "Videollamada o plan en la app, y la analítica en un centro de Santander.", "/nutricionista-online/santander/", None),
+        ]),
         ("Planes de 4 semanas", [
             ("Plan", "Come según tu ciclo", "La comida ordenada por el día de tu ciclo: regla, folicular, ovulación y lútea.", "/planes/come-segun-tu-ciclo/", "/assets/planes/46efbd82-da71-467f-8074-0579563f8faa.webp"),
             ("Plan", "Glow, piel luminosa desde dentro", "Cuatro semanas de comida para la piel: colágeno, barrera, minerales y color.", "/planes/glow/", "/assets/planes/37793bec-6f56-455e-ad92-1e6d8d0a0fdc.webp"),
@@ -54,6 +60,12 @@ EN = {
             ("Article", "How to beat jet lag", "Going east or west, from the UK to the USA or Australia, with a jet lag eating schedule.", "/en/jet-lag/", None),
             ("Article", "Cabin crew meal prep", "What to cook before a trip, what to pack and what to eat on a night flight.", "/en/cabin-crew-meal-prep/", None),
             ("Free guide", "Guide for long haul cabin crew", "Jet lag, food on board, sleep and blood tests for 24 to 72 hour layovers.", "/en/cabin-crew/", "/assets/guias/cabin-crew-guide-cover.webp|contain"),
+        ]),
+        ("Online consultations in Spain", [
+            ("Consultation", "English speaking nutritionist in Madrid", "Video call or a plan in the app, and your blood test at a centre in Madrid.", "/en/nutritionist/madrid/", None),
+            ("Consultation", "English speaking nutritionist in Barcelona", "Video call or a plan in the app, and your blood test at a centre in Barcelona.", "/en/nutritionist/barcelona/", None),
+            ("Consultation", "English speaking nutritionist in Vigo", "Video call or a plan in the app, and your blood test at a centre in Vigo.", "/en/nutritionist/vigo/", None),
+            ("Consultation", "English speaking nutritionist in Santander", "Video call or a plan in the app, and your blood test at a centre in Santander.", "/en/nutritionist/santander/", None),
         ]),
     ],
     "note": 'My plans and recipes are in Spanish for now. If you read Spanish, you\'ll find them <a href="/guias/" hreflang="es" style="color:#5e1a24;border-bottom:1px solid #c9b578">here</a>.',
