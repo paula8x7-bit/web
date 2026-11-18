@@ -36,6 +36,19 @@ Paula es nutricionista integrativa y sobrecargo de largo radio. No es programado
 - El menú de arriba está copiado en cada página: si se cambia, hay que cambiarlo en todas y volver a generar.
 - `tools/crew/emails.py`: genera el HTML de los correos de Brevo (en `tools/crew/emails/`). Si se cambian, hay que pegarlos también en Brevo.
 
+## Lo que dicen las guías (leer antes de escribir de viajes o tripulaciones)
+
+Los PDF no están en el repositorio, así que aquí van sus reglas. **Antes de escribir cualquier artículo de viajes, jet lag o tripulaciones, comprueba que no las contradice** (y si hace falta, pide a Paula los PDF).
+
+- Escalas de **menos de 48 horas**: no adaptarse a la hora local. Dormir lo más cerca posible de la noche de casa y comer en horario de casa (en línea con lo que recomienda la OACI para tripulaciones).
+- Escalas de **más de 48 horas**: dormir en la noche local, haciendo que al menos 4 horas de sueño coincidan con la noche de casa; luz natural de día; comer en horario local (si se come en la noche biológica, algo ligero).
+- Entre las 00:00 y las 6:00 de casa es la noche biológica: si se come, algo ligero y fácil de digerir.
+- Volar al oeste se lleva mejor que al este: el reloj se retrasa unos 92 minutos al día tras volar al oeste y solo se adelanta unos 57 tras volar al este (Eastman y Burgess, 2009).
+- Vuelo nocturno al este con 8 husos o más: gafas de sol a primera hora al llegar.
+- Cafeína en la primera mitad de la jornada, poco a poco, y nada en las 6 horas antes de dormir.
+- Alcohol: la guía dice «empeora el sueño y la deshidratación; si bebes, que sea poco, con comida y lejos de la hora de dormir». En la web Paula prefiere: «el alcohol, en realidad, no ayuda a dormir». Paula no bebe: no ponerle en boca que toma alcohol.
+- No poner en primera persona prácticas de Paula que no estén en las guías o que ella no haya confirmado.
+
 ## Guía gratuita y correos (Brevo)
 
 - El formulario de la web envía el correo a Brevo (casilla de consentimiento obligatoria). Listas: «Guía tripulaciones ES» y «Crew guide EN».
@@ -50,11 +63,11 @@ Búsquedas reales (autocompletado de Google, noviembre de 2026). Nadie busca «n
 Hecho:
 1. Páginas de la guía de tripulaciones (ES y EN).
 2. Bloque de turnos en castellano: `/turnos/`, «qué comer en el turno de noche» y «cómo dormir después de un turno de noche».
-3. Turnos en inglés: `/en/what-to-eat-on-night-shift/` (gemela de «qué comer en el turno de noche», enlazada en el pie inglés). Falta una página general de turnos y el artículo de sueño en inglés.
+3. Turnos en inglés: `/en/what-to-eat-on-night-shift/` y `/en/how-to-sleep-after-night-shift/` (gemelas de los artículos en castellano). Falta una página general de turnos en inglés.
+4a. Jet lag en castellano: `/jet-lag/` (para viajeros; aviso para TCP con escalas cortas).
 
 Siguiente, por orden:
 4. **Artículos de tripulaciones**:
-   - Jet lag en castellano: «jet lag cómo recuperarse», «cómo evitar el jet lag de forma natural», «jet lag comida», «síntomas».
    - Jet lag en inglés: «how to beat jet lag going east / west», «UK to USA», «UK to Australia», «jet lag eating schedule / meal times».
    - «Qué comer antes de un vuelo largo» (qué llevar para comer en el avión, retención de líquidos en el avión, estreñimiento viajero).
    - «Cabin crew meal prep» en inglés (flight attendant meal prep ideas, what do flight attendants eat on long haul flights). Hoy solo hay blogs y redes sociales: hueco claro.

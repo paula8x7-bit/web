@@ -1,6 +1,7 @@
 # Textos de los artículos de viajes y jet lag (castellano). Se generan con tools/turnos/build.py.
 
 SRC_VIAJES = {
+    "travel": ("Eastman CI, Burgess HJ. How to travel the world without jet lag. Sleep Medicine Clinics, 2009.", "https://doi.org/10.1016/j.jsmc.2009.02.006"),
     "herxbmj": ("Herxheimer A. Jet lag. BMJ Clinical Evidence, 2014 (revisión sistemática).", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4006102/"),
     "burgess": ("Burgess HJ y cols. Preflight adjustment to eastward travel: 3 days of advancing sleep with and without morning bright light. Journal of Biological Rhythms, 2003.", "https://doi.org/10.1177/0748730403253585"),
     "wehrens": ("Wehrens SMT y cols. Meal timing regulates the human circadian system. Current Biology, 2017.", "https://doi.org/10.1016/j.cub.2017.04.059"),
@@ -9,6 +10,7 @@ SRC_VIAJES = {
 
 JETLAG = {
     "path": "/jet-lag/",
+    "alt": "/en/jet-lag/",
     "trail": [],
     "title": "Jet lag: cómo recuperarte antes y qué comer",
     "desc": "Síntomas del jet lag, por qué cuesta más volar al este y cómo recuperarte de forma natural: horarios, luz, comida, café y melatonina. De una sobrecargo de largo radio.",
@@ -100,5 +102,119 @@ JETLAG = {
         "cta_p": "En consulta preparamos tu plan para cada viaje: horarios de sueño, luz y comidas según tus rutas, con tus síntomas y tus analíticas delante. Online, en castellano o en inglés.",
         "cta_b2": ("Guía para tripulaciones", "/tripulaciones/"),
         "cta_note": 'Si vives en España, puedes hacerte las analíticas en <a href="https://diagnoseum.com/?utm_source=web-jet-lag&amp;utm_medium=referral" target="_blank" rel="noopener" data-umami-event="diagnoseum-jet-lag" style="color:#5e1a24;border-bottom:1px solid #c9b578">Diagnoseum</a>: eliges a la carta lo que quieres medir, sin volante y con el respaldo de Eurofins.',
+    },
+}
+
+
+JETLAG_EN = {
+    "lang": "en",
+    "path": "/en/jet-lag/",
+    "alt": "/jet-lag/",
+    "trail": [],
+    "title": "How to beat jet lag going east or west (and what to eat)",
+    "desc": "How to beat jet lag flying east or west, from the UK to the USA or Australia: a jet lag eating schedule, light, caffeine and melatonin. From a long haul Inflight Manager.",
+    "eyebrow": "Travel · Jet lag",
+    "h1": "How to beat jet lag",
+    "lead": "What to do before, during and after your flight so your body catches up with destination time as soon as possible.",
+    "intro": [
+        "I'm a nutritionist and a long haul Inflight Manager. I cross time zones several times a month, so jet lag is part of my job.",
+        "Here is what the research says for when you're staying several days at your destination: a holiday in New York or a work trip to Sydney.",
+        "<strong>If you're cabin crew or a pilot</strong> on layovers under 48 hours, this isn't for you: on short layovers, you're better off staying on home time. It's all in my <a href=\"/en/cabin-crew/\" style=\"color:#5e1a24;border-bottom:1px solid #c9b578\">free guide for long haul crew</a>.",
+    ],
+    "sections": [
+        {
+            "h2": "What jet lag is",
+            "ps": [
+                "Your body has an internal clock that stays on home time even when you're on another continent. Jet lag is the mismatch between that clock and the time where you are.",
+                "It usually kicks in from about five time zones. The most common symptoms are poor sleep, daytime tiredness, lower performance, digestive problems and feeling generally unwell.[herxbmj]",
+            ],
+        },
+        {
+            "h2": "Why flying east is harder than flying west",
+            "ps": [
+                "Your body clock finds it easier to run later than earlier. In real travellers, it moved back by about 92 minutes a day after flying west, but forward by only about 57 a day after flying east.[travel]",
+                "So a trip to New York is usually easier than the flight home.",
+            ],
+        },
+        {
+            "h2": "UK to USA: flying west",
+            "ps": [
+                "New York is 5 hours behind the UK and Los Angeles 8. Your clock has to run later, which is the easy direction.",
+                "On arrival, stay awake until a normal local bedtime and get outside in the afternoon. A few days before you fly, you can go to bed a little later each night to get a head start.[travel]",
+            ],
+        },
+        {
+            "h2": "UK to Australia: flying east",
+            "ps": [
+                "Sydney is 9 to 11 hours ahead of the UK, depending on the time of year. It's the hardest trip there is.",
+                "With 8 or more time zones east, the body clock often shifts the wrong way, later instead of earlier. That's why, for trips this long, many experts suggest shifting your clock later, as if you were flying west.[travel]",
+                "If you land in the morning, wear sunglasses first thing and get your daylight later in the morning and in the afternoon: early morning light can push your clock the wrong way.[travel]",
+            ],
+        },
+        {
+            "h2": "Before you fly: get a head start",
+            "ps": [
+                "You can arrive with part of the work done. In one study, going to bed an hour earlier each day for three days, with bright light in the morning, moved the body clock about two hours earlier before the trip.[burgess]",
+                "Even one or two days helps, but don't shift by more than about an hour a day.[travel]",
+            ],
+        },
+        {
+            "h2": "A jet lag eating schedule",
+            "ps": [
+                "Meal times also move clocks in your body. In a University of Surrey study, eating five hours later shifted the blood glucose rhythm by almost six hours.[wehrens]",
+                "There are no good studies on specific foods for jet lag.[herxbmj] What you can do is move your meals along with your sleep.[travel]",
+            ],
+            "list_h": "If you're staying several days",
+            "list": [
+                "In the days before you fly, move your meals along with your bedtime.",
+                "On the plane, eat at destination meal times. If it's night there, eat little or nothing.",
+                "From day one, breakfast, lunch and dinner on local time, even if they're small.",
+                "Light dinners for the first few nights, so you sleep better.",
+                "Water throughout the day.",
+            ],
+        },
+        {
+            "h2": "On the plane",
+            "ps": [
+                "If you're staying several days, set your watch to destination time as soon as you board. If it's night there, try to sleep: eye mask, earplugs and no screens.",
+                "Drink water throughout the flight. And alcohol doesn't actually help you sleep.[ebrahim]",
+            ],
+        },
+        {
+            "h2": "Caffeine at the right time",
+            "ps": [
+                "Coffee helps you stay awake during the day, but have it early: even 6 hours before bed, caffeine cut sleep short.[drake]",
+            ],
+        },
+        {
+            "h2": "What about melatonin?",
+            "ps": [
+                "It's what has the most evidence. In the Cochrane review, nine out of ten trials found that melatonin taken close to bedtime at the destination reduced jet lag on flights across five or more time zones, especially flying east.[cochrane]",
+                "Timing matters, though: taken early in the day, it can slow down adjustment. If you're thinking about it, check with a professional first, especially if you have epilepsy or take blood thinners like warfarin.[cochrane]",
+            ],
+        },
+        {
+            "h2": "Short layovers: stay on home time",
+            "ps": [
+                "If you're there for less than 48 hours, don't try to adjust to local time. Sleep as close as you can to your home night and eat on home time: getting back home is much easier. It's what I do on my layovers.",
+                "If the layover is longer than 48 hours, sleep at night local time, but make sure at least 4 hours of your sleep fall within your home night.",
+                "I go into detail in my <a href=\"/en/cabin-crew/\">free guide for long haul crew</a>, written for 24 to 72 hour layovers.",
+            ],
+        },
+    ],
+    "faq": [
+        ("How long does jet lag last?", "It depends on how many time zones you cross and in which direction. Flying west, your body clock catches up by about an hour and a half a day; flying east, by about one hour a day."),
+        ("Is jet lag worse going east or west?", "East. Your body clock finds it harder to run earlier than later, so the trip home from the USA is usually harder than the trip out."),
+        ("How do I beat jet lag from the UK to Australia?", "It's a trip of 9 to 11 hours east, where the clock often shifts the wrong way. Many experts suggest shifting your clock later, as if flying west, and on arrival wearing sunglasses early in the morning and getting daylight later in the day."),
+        ("What should I eat for jet lag?", "There are no miracle foods, but timing matters: move your meals along with your sleep, eat on local time from day one and keep dinners light for the first few nights."),
+        ("Does melatonin work for jet lag?", "It has the most evidence, especially on flights across five or more time zones going east, taken close to bedtime at the destination. Check with a professional before taking it."),
+        ("What if I'm cabin crew or a pilot?", "On layovers under 48 hours, don't adjust to local time: sleep as close as you can to your home night and eat on home time. Getting back home is much easier."),
+    ],
+    "sources": ["herxbmj", "travel", "burgess", "wehrens", "ebrahim", "drake", "cochrane"],
+    "cta": {
+        "cta_h": "Do you travel a lot for work?",
+        "cta_p": "In my consultations we plan each trip with you: sleep, light and meal times for your routes, with your symptoms and blood tests in front of us. Online, in English or Spanish.",
+        "cta_b2": ("Cabin crew guide", "/en/cabin-crew/"),
+        "cta_note": 'Living in Spain? You can get your blood tests done at <a href="https://diagnoseum.com/?utm_source=web-jet-lag-en&amp;utm_medium=referral" target="_blank" rel="noopener" data-umami-event="diagnoseum-jet-lag-en" style="color:#5e1a24;border-bottom:1px solid #c9b578">Diagnoseum</a>: you choose exactly what you want to test, no doctor\'s referral needed, backed by Eurofins.',
     },
 }

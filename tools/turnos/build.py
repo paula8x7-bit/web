@@ -7,10 +7,12 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from content import SRC, COMER, DORMIR, HUB  # noqa: E402
 from content_en import SRC_EN, EAT_EN, SLEEP_EN
-from content_viajes import SRC_VIAJES, JETLAG  # noqa: E402
+from content_viajes import SRC_VIAJES, JETLAG, JETLAG_EN  # noqa: E402
 
-SRC.update(SRC_EN)
-SRC.update(SRC_VIAJES)
+for extra in (SRC_EN, SRC_VIAJES):
+    repes = SRC.keys() & extra.keys()
+    assert not repes, f"Fuentes con el mismo nombre en dos ficheros: {repes}"
+    SRC.update(extra)
 # Página gemela en el otro idioma (para hreflang y el selector ES / EN)
 COMER["alt"] = EAT_EN["path"]
 DORMIR["alt"] = SLEEP_EN["path"]
@@ -190,7 +192,7 @@ def sources_html(c, title="Fuentes", en=False):
     if not c.order:
         return ""
     items = "".join(
-        f'<li style="margin-bottom:8px"><a href="{SRC[k][1]}" target="_blank" rel="noopener" style="color:#5c5a4f;border-bottom:1px solid #d9cfb4">{html.escape(SRC[k][0].replace(" y cols.", " et al.") if en else SRC[k][0])}</a></li>'
+        f'<li style="margin-bottom:8px"><a href="{SRC[k][1]}" target="_blank" rel="noopener" style="color:#5c5a4f;border-bottom:1px solid #d9cfb4">{html.escape(SRC[k][0].replace(" y cols.", " et al.").replace("(revisión sistemática)", "(systematic review)") if en else SRC[k][0])}</a></li>'
         for k in c.order)
     return (f'<div id="fuentes" style="max-width:760px;margin:0 auto;padding-top:clamp(30px,4vw,48px)">'
             f'<h2 style="{F_JOST};font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a98a4a;margin-bottom:14px">{title}</h2>'
@@ -347,7 +349,7 @@ def hub(t):
     return head(t, ld) + HEADER + "\n\n" + main + "\n" + FOOTER + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
 
 
-for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article), (JETLAG, article)):
+for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article), (JETLAG, article), (JETLAG_EN, article)):
     dest = ROOT / t["path"].strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(fn(t))
