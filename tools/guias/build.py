@@ -20,7 +20,8 @@ ES = {
             ("Artículo", "Cómo dormir después de un turno de noche", "Luz, oscuridad, horarios y café para dormir de día.", "/turnos/como-dormir-despues-del-turno-de-noche/", None),
             ("Consulta", "Nutricionista para trabajo a turnos", "Cómo trabajo con quien come a deshora y duerme de día.", "/turnos/", None),
         ]),
-        ("Tripulaciones", [
+        ("Viajes y tripulaciones", [
+            ("Artículo", "Jet lag: cómo recuperarte", "Síntomas, por qué cuesta más volar al este y qué hacer con la luz, la comida y el café.", "/jet-lag/", None),
             ("Guía gratuita", "Guía para tripulaciones de largo radio", "Jet lag, comida a bordo, sueño y analíticas para escalas de 24 a 72 horas.", "/tripulaciones/", "/assets/guias/portada-guia-tripulaciones.webp|contain"),
         ]),
         ("Planes de 4 semanas", [
@@ -109,7 +110,7 @@ def page(t, lang):
     secs = "".join(
         f'<div style="max-width:1240px;margin:0 auto clamp(40px,5vw,64px)">'
         f'<h2 style="{H2};margin-bottom:clamp(18px,2.4vw,28px)">{name}</h2>'
-        f'<div data-cards style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)">'
+        f'<div data-cards style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);align-items:start">'
         + "".join(card(*c) for c in cards) + "</div></div>"
         for name, cards in t["sections"])
     note = (f'<p style="{F_JOST};font-weight:300;font-size:16px;line-height:1.7;color:#5c5a4f;max-width:1240px;margin:0 auto">{t["note"]}</p>'

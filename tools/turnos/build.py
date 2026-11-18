@@ -6,9 +6,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from content import SRC, COMER, DORMIR, HUB  # noqa: E402
-from content_en import SRC_EN, EAT_EN, SLEEP_EN  # noqa: E402
+from content_en import SRC_EN, EAT_EN, SLEEP_EN
+from content_viajes import SRC_VIAJES, JETLAG  # noqa: E402
 
 SRC.update(SRC_EN)
+SRC.update(SRC_VIAJES)
 # Página gemela en el otro idioma (para hreflang y el selector ES / EN)
 COMER["alt"] = EAT_EN["path"]
 DORMIR["alt"] = SLEEP_EN["path"]
@@ -210,10 +212,12 @@ def cta_box(x):
 
 def article(t):
     lang = t.get("lang", "es")
-    x = L[lang]
+    x = {**L[lang], **t.get("cta", {})}  # una página puede cambiar los textos del recuadro final
     c = Cites(x["src"])
     url = SITE + t["path"]
-    if lang == "es":
+    if "trail" in t:
+        trail = [x["home"], *t["trail"], (t["h1"], t["path"])]
+    elif lang == "es":
         trail = [x["home"], ("Trabajo a turnos", "/turnos/"), (t["h1"], t["path"])]
     else:
         trail = [x["home"], (t["h1"], t["path"])]
@@ -343,7 +347,7 @@ def hub(t):
     return head(t, ld) + HEADER + "\n\n" + main + "\n" + FOOTER + '\n\n<script src="/script.js"></script>\n</body>\n</html>\n'
 
 
-for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article)):
+for t, fn in ((HUB, hub), (COMER, article), (DORMIR, article), (EAT_EN, article), (SLEEP_EN, article), (JETLAG, article)):
     dest = ROOT / t["path"].strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(fn(t))
