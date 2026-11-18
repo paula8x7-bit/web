@@ -497,14 +497,14 @@ CORTO = {
             "ps": [
                 "El aire de cabina es muy seco[martingill] y en las rotaciones es fácil pasar horas sin beber. Lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
                 "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, la leche y las soluciones de rehidratación oral se retenían bastante más que el agua; las bebidas para deportistas, en cambio, no se diferenciaron del agua.[bhi]",
-                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y, si puedes comprarlo después del control, un yogur, un kéfir o un vaso de leche. En días de mucho calor o mucho trabajo, los sobres de suero oral en polvo de farmacia son una opción: pasan el control y se mezclan con el agua de tu botella. Consulta con un profesional cómo tomarlos.",
+                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y un yogur, un kéfir o un vaso de leche. En días de mucho calor o mucho trabajo, los sobres de suero oral en polvo de farmacia son una opción: se mezclan con el agua de tu botella. Consulta con un profesional cómo tomarlos.",
             ],
         },
         {
             "h2": "El agua caliente del avión",
             "ps": [
                 "Es lo que hay a mano para un té, unos fideos o algo calentito, pero el agua de los depósitos no siempre está en buenas condiciones. En un estudio que analizó el agua de a bordo, se encontraron bacterias de 37 especies distintas, y el camión que rellena los depósitos era una de las principales fuentes.[aguavion]",
-                "Un termo lleno no pasa el control de seguridad, ni siquiera siendo tripulante. Si te gusta tomar algo caliente en la rotación, llévalo vacío y llénalo después del control. Y lo que calientas en el horno del avión no necesita agua.",
+                "El termo, en muchos aeropuertos, no pasa el control de seguridad, ni siquiera siendo tripulante. Si te apetece algo caliente, mejor la comida que calientas en el horno del avión, que no necesita agua.",
             ],
         },
         {
@@ -532,8 +532,8 @@ CORTO = {
     "faq": [
         ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica."),
         ("¿Qué comer en un día de cuatro o seis saltos?", "Cosas que se comen en cinco minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, cuando haya hueco en una escala o después del servicio."),
-        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado) y, si puedes comprarlo después del control, un yogur o un vaso de leche. En un ensayo, la leche y las soluciones de rehidratación oral se retenían más que el agua; los sobres de suero en polvo pasan el control."),
-        ("¿Es seguro el agua caliente del avión?", "El agua de los depósitos no siempre está en buenas condiciones: en un estudio se encontraron bacterias de muchas especies. Para algo caliente, mejor un termo que llenes después del control de seguridad."),
+        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado) y un yogur, un kéfir o un vaso de leche. En un ensayo, la leche y las soluciones de rehidratación oral se retenían más que el agua."),
+        ("¿Es seguro el agua caliente del avión?", "El agua de los depósitos no siempre está en buenas condiciones: en un estudio se encontraron bacterias de muchas especies. Para algo caliente, mejor la comida que calientas en el horno del avión."),
         ("¿Cuándo dejar el café si madrugo al día siguiente?", "Tómalo en la primera mitad de la jornada y deja al menos 6 horas sin cafeína antes de acostarte."),
     ],
     "sources": ["arsintescu", "akerstedt", "steven", "gupta", "martingill", "bhi", "aguavion", "drake", "vejvoda"],
@@ -613,14 +613,14 @@ CORTO_EN = {
             "ps": [
                 "Cabin air is very dry[martingill] and on a busy day it's easy to go hours without drinking. Bring your own bottle and have a little on every sector, without waiting until you're thirsty.",
                 "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that milk and oral rehydration solutions were retained much better than water, while sports drinks were no different from water.[bhi]",
-                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and, if you can buy it airside, a yoghurt, a kefir or a glass of milk. On very hot or very busy days, oral rehydration sachets from the pharmacy are an option: the powder goes through security and you mix it with the water in your bottle. Ask a professional how to take them.",
+                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and a yoghurt, a kefir or a glass of milk. On very hot or very busy days, oral rehydration sachets from the pharmacy are an option: you mix the powder with the water in your bottle. Ask a professional how to take them.",
             ],
         },
         {
             "h2": "The hot water on board",
             "ps": [
                 "It's what's at hand for a tea, some noodles or something warm, but the water in the aircraft tanks isn't always in good condition. A study that tested water on board found 37 different species of bacteria, and the truck that fills the tanks was one of the main sources.[aguavion]",
-                "A full flask won't get through security, not even as crew. If you like something hot during the day, take it empty and fill it airside. And the food you heat in the aircraft oven doesn't need any water.",
+                "At many airports a flask won't get through security, not even as crew. If you fancy something hot, go for the food you heat in the aircraft oven, which doesn't need any water.",
             ],
         },
         {
@@ -648,8 +648,8 @@ CORTO_EN = {
     "faq": [
         ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, toast with olive oil or a glass of milk with a few nuts. At that hour your body is still in its biological night."),
         ("What should cabin crew eat on a four or six sector day?", "Food you can eat in five minutes without cutlery, like boiled eggs, fruit, nuts or vegetable sticks with hummus, spread across the sectors. Have your main meal when there's a gap on a turnaround or after the service."),
-        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty) and, if you can buy it airside, a yoghurt or a glass of milk. In one trial, milk and oral rehydration solutions were retained better than water; rehydration sachets in powder form go through security."),
-        ("Is the hot water on a plane safe to drink?", "The water in aircraft tanks isn't always in good condition: one study found many species of bacteria. For something hot, take an empty flask and fill it airside."),
+        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty) and a yoghurt, a kefir or a glass of milk. In one trial, milk and oral rehydration solutions were retained better than water."),
+        ("Is the hot water on a plane safe to drink?", "The water in aircraft tanks isn't always in good condition: one study found many species of bacteria. For something hot, go for the food you heat in the aircraft oven."),
         ("When should I stop caffeine if I have an early tomorrow?", "Have it in the first half of your duty and leave at least 6 hours without caffeine before bed."),
     ],
     "sources": CORTO["sources"],
