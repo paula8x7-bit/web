@@ -1,6 +1,11 @@
 # Textos de los artículos de viajes y jet lag (castellano). Se generan con tools/turnos/build.py.
 
 SRC_VIAJES = {
+    "martingill": ("Martin-Gill C y cols. In-flight medical emergencies: a review. JAMA, 2018.", "https://doi.org/10.1001/jama.2018.19842"),
+    "hinning": ("Hinninghofen H, Enck P. Passenger well-being in airplanes. Autonomic Neuroscience, 2006.", "https://doi.org/10.1016/j.autneu.2006.07.018"),
+    "mitter": ("Mittermayr M y cols. Leg edema formation and venous blood flow velocity during a simulated long-haul flight. Thrombosis Research, 2007.", "https://doi.org/10.1016/j.thromres.2006.12.012"),
+    "medias": ("Clarke MJ y cols. Compression stockings for preventing deep vein thrombosis in airline passengers. Cochrane Database of Systematic Reviews, 2021.", "https://doi.org/10.1002/14651858.CD004002.pub4"),
+    "kiwi": ("Chey SW y cols. Exploratory comparative effectiveness trial of green kiwifruit, psyllium, or prunes in US patients with chronic constipation. American Journal of Gastroenterology, 2021.", "https://doi.org/10.14309/ajg.0000000000001149"),
     "travel": ("Eastman CI, Burgess HJ. How to travel the world without jet lag. Sleep Medicine Clinics, 2009.", "https://doi.org/10.1016/j.jsmc.2009.02.006"),
     "herxbmj": ("Herxheimer A. Jet lag. BMJ Clinical Evidence, 2014 (revisión sistemática).", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4006102/"),
     "burgess": ("Burgess HJ y cols. Preflight adjustment to eastward travel: 3 days of advancing sleep with and without morning bright light. Journal of Biological Rhythms, 2003.", "https://doi.org/10.1177/0748730403253585"),
@@ -49,6 +54,7 @@ JETLAG = {
             "ps": [
                 "En cuanto subas, pon el reloj en la hora del destino y organízate según esa hora. Si allí es de noche, intenta dormir: antifaz, tapones y nada de pantallas. Si allí es de día, aguanta despierto, aunque sea con alguna siesta corta.",
                 "Bebe agua durante todo el vuelo. Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
+                "Qué comer antes de salir y qué llevar te lo cuento en <a href=\"/que-comer-antes-de-un-vuelo-largo/\">qué comer antes de un vuelo largo</a>.",
             ],
         },
         {
@@ -218,3 +224,91 @@ JETLAG_EN = {
         "cta_note": 'Living in Spain? You can get your blood tests done at <a href="https://diagnoseum.com/?utm_source=web-jet-lag-en&amp;utm_medium=referral" target="_blank" rel="noopener" data-umami-event="diagnoseum-jet-lag-en" style="color:#5e1a24;border-bottom:1px solid #c9b578">Diagnoseum</a>: you choose exactly what you want to test, no doctor\'s referral needed, backed by Eurofins.',
     },
 }
+
+
+VUELO = {
+    "path": "/que-comer-antes-de-un-vuelo-largo/",
+    "trail": [],
+    "title": "Qué comer antes de un vuelo largo (y qué llevar al avión)",
+    "desc": "Qué comer antes de un vuelo largo, qué llevar para comer en el avión y cómo evitar la hinchazón, la retención de líquidos y el estreñimiento al viajar. De una sobrecargo nutricionista.",
+    "eyebrow": "Viajes · Comida",
+    "h1": "Qué comer antes de un vuelo largo",
+    "lead": "Qué comer antes de salir, qué llevar en la bolsa y cómo llegar sin hinchazón, sin piernas pesadas y sin estreñimiento.",
+    "intro": [
+        "Soy nutricionista y sobrecargo de largo radio. Es muy habitual subir al avión con hambre, comer lo primero que encuentras en el aeropuerto y aterrizar hinchado.",
+        "Con un poco de organización, el vuelo se lleva mucho mejor. Esto es lo que te recomiendo.",
+        "<strong>Si eres TCP o piloto</strong>, en mi <a href=\"/tripulaciones/\" style=\"color:#5e1a24;border-bottom:1px solid #c9b578\">guía gratuita para tripulaciones de largo radio</a> tienes cómo organizar la comida a bordo y en la escala.",
+    ],
+    "sections": [
+        {
+            "h2": "Antes de salir: una comida completa",
+            "ps": [
+                "Haz una comida completa antes de ir al aeropuerto: proteína, verdura cocinada y una ración de hidrato. Así no llegas con hambre a la puerta de embarque.",
+                "Si hasta la siguiente comida van a pasar más de 6 horas, lleva algo para el camino.",
+            ],
+            "list_h": "Ideas para esa comida",
+            "list": [
+                "Pescado a la plancha con patata cocida y judías verdes.",
+                "Pollo asado con boniato y calabacín.",
+                "Tortilla con verdura salteada y pan de masa madre.",
+            ],
+        },
+        {
+            "h2": "El día del vuelo: lo que mejor evitar",
+            "ps": [
+                "En cabina la presión es más baja que en tierra. Los gases del intestino ocupan más y la digestión se vuelve más lenta: en estudios con la presión de un avión en vuelo, las comidas con mucha fibra vaciaban el estómago más despacio y daban sensación de pesadez.[hinning]",
+                "Por eso, el día del vuelo, reduce las legumbres y las crucíferas crudas (brócoli, coliflor, col) y evita las bebidas con gas y el chicle.",
+            ],
+        },
+        {
+            "h2": "Qué llevar para comer en el avión",
+            "ps": [
+                "Con una bolsa térmica pequeña resuelves el vuelo y la primera comida en destino.",
+            ],
+            "list_h": "Lo que cabe en la bolsa",
+            "list": [
+                "Huevos cocidos.",
+                "Zanahoria, pepino y pimiento en bastones.",
+                "Verdura asada con boniato o quinoa en un táper.",
+                "Frutos secos y un aguacate.",
+                "Pan de centeno de masa madre.",
+                "Fruta entera.",
+                "Bolsitas de manzanilla, rooibos o jengibre, para pedir agua caliente a bordo.",
+            ],
+            "after": "Ojo con dos cosas. El yogur, el kéfir, las cremas y los caldos cuentan como líquidos en el control de seguridad, así que cómpralos después. Y Estados Unidos, Australia o Japón restringen la fruta, la verdura y la carne frescas: lo que sobre, cómelo antes de aterrizar o tíralo en el avión.",
+        },
+        {
+            "h2": "Agua, a sorbos",
+            "ps": [
+                "El aire de cabina es muy seco.[martingill] Bebe agua a sorbos y de forma regular, sin esperar a tener sed. Las infusiones también cuentan.",
+                "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
+            ],
+        },
+        {
+            "h2": "Retención de líquidos y piernas hinchadas",
+            "ps": [
+                "La hinchazón de piernas en un vuelo largo viene sobre todo de estar sentado. En un estudio que simuló diez horas en asientos de avión, el volumen de la parte baja de las piernas ya había subido a las cuatro horas, y volvió a la normalidad al día siguiente.[mitter]",
+                "Levántate y pasea por el pasillo cuando puedas. Sentado, mueve los tobillos y haz elevaciones de talones cada hora.",
+                "Las medias de compresión reducen los trombos sin síntomas en vuelos de más de cuatro horas, y probablemente también la hinchazón.[medias] Si tienes más riesgo de trombosis, consúltalo con tu médico antes de volar.",
+            ],
+        },
+        {
+            "h2": "El estreñimiento del viajero",
+            "ps": [
+                "Cambiar de horarios, beber menos, pasar horas sentado y comer distinto: el intestino lo nota.",
+                "Lo que mejor funciona es lo de siempre: agua, verdura, fruta y moverte. En un ensayo, dos kiwis verdes al día mejoraron el estreñimiento igual que las ciruelas pasas o el psyllium, y fueron lo que menos molestias dio.[kiwi] Llévatelos para el primer día, pero cómetelos antes de aterrizar si vas a un país que no deja entrar fruta.",
+                "Y cuando tengas ganas de ir al baño, no lo dejes para luego.",
+            ],
+        },
+    ],
+    "faq": [
+        ("¿Qué es mejor comer antes de un vuelo largo?", "Una comida completa y fácil de digerir antes de ir al aeropuerto: proteína, verdura cocinada y una ración de hidrato, como pescado con patata y judías verdes."),
+        ("¿Qué no comer antes de volar?", "El día del vuelo, mejor reducir las legumbres y las crucíferas crudas, y evitar las bebidas con gas y el chicle: en cabina los gases ocupan más y la digestión es más lenta."),
+        ("¿Qué llevar para comer en el avión?", "Huevos cocidos, verdura en bastones o asada en un táper, frutos secos, pan de masa madre y fruta entera. El yogur y los caldos, cómpralos después del control de seguridad."),
+        ("¿Por qué se me hinchan las piernas en el avión?", "Sobre todo por pasar muchas horas sentado. Levantarte, pasear y mover los tobillos ayuda, y las medias de compresión también pueden ayudar."),
+        ("¿Por qué me estriño cuando viajo?", "Por el cambio de horarios, beber menos, estar sentado y comer distinto. Agua, fruta como el kiwi, verdura y movimiento son lo que mejor funciona."),
+    ],
+    "sources": ["hinning", "martingill", "ebrahim", "mitter", "medias", "kiwi"],
+}
+
+VUELO["cta"] = JETLAG["cta"]
