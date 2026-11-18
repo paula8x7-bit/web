@@ -275,7 +275,6 @@ VUELO = {
                 "Frutos secos y un aguacate.",
                 "Pan de centeno de masa madre.",
                 "Fruta entera.",
-                "Bolsitas de manzanilla, rooibos o jengibre, para pedir agua caliente a bordo.",
             ],
             "after": "Ojo con dos cosas. Lo que se puede pasar por el control de seguridad depende de cada aeropuerto: algunos, como varios de Londres, ya permiten llevar más líquido. Si llevas yogur, kéfir o caldo, confírmalo antes con la seguridad del aeropuerto. Y Estados Unidos, Australia o Japón restringen la fruta, la verdura y la carne frescas: lo que sobre, cómelo antes de aterrizar o tíralo en el avión.",
         },
@@ -372,11 +371,11 @@ MEALPREP_EN = {
             ],
         },
         {
-            "h2": "What I pack",
+            "h2": "What to pack",
             "ps": [
-                "A small cool bag covers the flight and your first meal down route. This is the list I use.",
+                "A small cool bag covers the flight and your first meal down route.",
             ],
-            "list_h": "In my cool bag",
+            "list_h": "In the cool bag",
             "list": [
                 "Boiled eggs and small tins of sardines or mackerel.",
                 "Greek yoghurt or kefir for the flight.",
@@ -474,7 +473,6 @@ CORTO = {
             "list": [
                 "Un yogur natural o kéfir con fruta.",
                 "Una tostada de pan de masa madre con aceite de oliva y tomate.",
-                "Un vaso de leche o de bebida vegetal con unos frutos secos.",
             ],
         },
         {
@@ -497,8 +495,8 @@ CORTO = {
             "h2": "Líquidos y electrolitos durante el día",
             "ps": [
                 "El aire de cabina es muy seco[martingill] y en las rotaciones es fácil pasar horas sin beber. Lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
-                "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, la leche se retenía bastante más que el agua; las bebidas para deportistas, en cambio, no se diferenciaron del agua.[bhi]",
-                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y un yogur, un kéfir o un vaso de leche. Y en tu botella, una pizca de sal: cuánta, te lo cuento en mi <a href=\"/tripulaciones/\">guía gratuita para tripulaciones</a>. Los sobres de farmacia y las bebidas para deportistas suelen llevar azúcar, así que para el día a día no los necesitas.",
+                "Para que el líquido se quede en el cuerpo, ayuda que lleve electrolitos. En un ensayo que comparó trece bebidas, las bebidas para deportistas no se retuvieron mejor que el agua.[bhi]",
+                "En la práctica: acompaña el agua con comida (fruta, verdura, algo salado como el queso o las conservas) y un yogur o un kéfir. Y en tu botella, una pizca de sal: cuánta, te lo cuento en mi <a href=\"/tripulaciones/\">guía gratuita para tripulaciones</a>. Los sobres de farmacia y las bebidas para deportistas suelen llevar azúcar, así que para el día a día no los necesitas.",
             ],
         },
         {
@@ -531,9 +529,9 @@ CORTO = {
         },
     ],
     "faq": [
-        ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica, así que si no te entra nada, llévatelo y tómalo más tarde."),
+        ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, o una tostada con aceite de oliva. A esa hora tu cuerpo sigue en su noche biológica, así que si no te entra nada, llévatelo y tómalo más tarde."),
         ("¿Qué comer en un día de cuatro o seis saltos?", "Cosas que se comen en cinco minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, cuando haya hueco en una escala o después del servicio."),
-        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado), un yogur, un kéfir o un vaso de leche, y pon una pizca de sal en tu botella. En un ensayo, la leche se retenía más que el agua."),
+        ("¿Cómo reponer electrolitos durante la rotación?", "Acompaña el agua con comida (fruta, verdura y algo salado), un yogur o un kéfir, y pon una pizca de sal en tu botella."),
         ("¿Es seguro el agua caliente del avión?", "El agua de los depósitos no siempre está en buenas condiciones: en un estudio se encontraron bacterias de muchas especies. Para algo caliente, mejor la comida que calientas en el horno del avión."),
         ("¿Cuándo dejar el café si madrugo al día siguiente?", "Tómalo en la primera mitad de la jornada y deja al menos 6 horas sin cafeína antes de acostarte."),
     ],
@@ -590,7 +588,6 @@ CORTO_EN = {
             "list": [
                 "Natural yoghurt or kefir with fruit.",
                 "Sourdough toast with olive oil and tomato.",
-                "A glass of milk or a plant drink with a few nuts.",
             ],
         },
         {
@@ -613,8 +610,8 @@ CORTO_EN = {
             "h2": "Fluids and electrolytes through the day",
             "ps": [
                 "Cabin air is very dry[martingill] and on a busy day it's easy to go hours without drinking. Bring your own bottle and have a little on every sector, without waiting until you're thirsty.",
-                "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that milk was retained much better than water, while sports drinks were no different from water.[bhi]",
-                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and a yoghurt, a kefir or a glass of milk. And add a pinch of salt to your bottle: how much, I explain in my <a href=\"/en/cabin-crew/\">free cabin crew guide</a>. Pharmacy sachets and sports drinks usually contain sugar, so you don't need them day to day.",
+                "Electrolytes help your body hold on to what you drink. A trial comparing thirteen drinks found that sports drinks were retained no better than water.[bhi]",
+                "In practice: have your water with food (fruit, vegetables and something salty, like cheese or tinned fish) and a yoghurt or a kefir. And add a pinch of salt to your bottle: how much, I explain in my <a href=\"/en/cabin-crew/\">free cabin crew guide</a>. Pharmacy sachets and sports drinks usually contain sugar, so you don't need them day to day.",
             ],
         },
         {
@@ -647,9 +644,9 @@ CORTO_EN = {
         },
     ],
     "faq": [
-        ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, toast with olive oil or a glass of milk with a few nuts. At that hour your body is still in its biological night, so if you can't face food, take it with you and have it later."),
+        ("What should I eat before a 5am report?", "Something light and easy to digest: yoghurt or kefir with fruit, or toast with olive oil. At that hour your body is still in its biological night, so if you can't face food, take it with you and have it later."),
         ("What should cabin crew eat on a four or six sector day?", "Food you can eat in five minutes without cutlery, like boiled eggs, fruit, nuts or vegetable sticks with hummus, spread across the sectors. Have your main meal when there's a gap on a turnaround or after the service."),
-        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty), a yoghurt, a kefir or a glass of milk, and add a pinch of salt to your bottle. In one trial, milk was retained better than water."),
+        ("How can I replace electrolytes on a busy duty?", "Have your water with food (fruit, vegetables and something salty), a yoghurt or a kefir, and add a pinch of salt to your bottle."),
         ("Is the hot water on a plane safe to drink?", "The water in aircraft tanks isn't always in good condition: one study found many species of bacteria. For something hot, go for the food you heat in the aircraft oven."),
         ("When should I stop caffeine if I have an early tomorrow?", "Have it in the first half of your duty and leave at least 6 hours without caffeine before bed."),
     ],

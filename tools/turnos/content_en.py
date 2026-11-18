@@ -90,7 +90,7 @@ EAT_EN = {
         {
             "h2": "After your shift: a light breakfast, then sleep",
             "ps": [
-                "If you get home hungry, have something small so it doesn't wake you mid morning: a yoghurt, toast with olive oil, a glass of milk or a plant drink. Save the proper meal for when you get up.",
+                "If you get home hungry, have something small so it doesn't wake you mid morning: a yoghurt, a kefir or toast with olive oil. Save the proper meal for when you get up.",
                 "And alcohol doesn't actually help you sleep.[ebrahim]",
             ],
         },
@@ -129,7 +129,7 @@ SLEEP_EN = {
     "h1": "How to sleep after a night shift",
     "lead": "What you do between leaving work and getting into bed matters as much as how many hours you sleep.",
     "intro": [
-        "You get home exhausted and still can't drop off, or you wake up three hours later. It happens to me too after a night flight.",
+        "You get home exhausted and still can't drop off, or you wake up three hours later. It happens to me down route: after a night flight, I usually wake up on home time.",
         "Morning light tells your internal clock it's time to be awake. Almost everything that works is about protecting your sleep from that signal.",
     ],
     "sections": [
@@ -176,7 +176,7 @@ SLEEP_EN = {
         },
     ],
     "faq": [
-        ("How many hours should I sleep after a night shift?", "The same as you need on any other day, which for most adults is between 7 and 9. If you can't get them in one go, top up with an afternoon nap."),
+        ("How many hours should I sleep after a night shift?", "The same as you need on any other day. If you can't get them in one go, top up with an afternoon nap."),
         ("Why do I wake up a few hours after going to bed?", "Because by mid morning your internal clock is pushing you to be awake. Total darkness, quiet and no caffeine in the 6 hours before bed help you stay asleep."),
         ("Is it bad to sleep during the day?", "Sleeping during the day is harder because it goes against your internal clock, but you can sleep well if you look after the light on the way home, the darkness of your room and a fixed bedtime."),
         ("Should I nap before a night shift?", "Yes, especially before your first night. An afternoon nap reduces the tiredness you start your shift with."),

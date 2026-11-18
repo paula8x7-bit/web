@@ -75,7 +75,7 @@ COMER = {
         {
             "h2": "Al salir: un desayuno ligero y a dormir",
             "ps": [
-                "Si llegas con hambre, toma algo pequeño para que no te despierte a media mañana: un yogur, una tostada con aceite, un vaso de leche o bebida vegetal. Deja la comida fuerte para cuando te levantes.",
+                "Si llegas con hambre, toma algo pequeño para que no te despierte a media mañana: un yogur, un kéfir o una tostada con aceite. Deja la comida fuerte para cuando te levantes.",
                 "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
             ],
         },
@@ -104,7 +104,7 @@ DORMIR = {
     "h1": "Cómo dormir después de un turno de noche",
     "lead": "Lo que haces entre que sales del trabajo y te metes en la cama cuenta tanto como las horas que duermes.",
     "intro": [
-        "Llegas a casa agotado y, aun así, te cuesta dormir o te despiertas a las tres horas. Me pasa también a mí al volver de un vuelo de noche.",
+        "Llegas a casa agotado y, aun así, te cuesta dormir o te despiertas a las tres horas. A mí me pasa en destino: después de un vuelo de noche, me suelo despertar a la hora de casa.",
         "La luz de la mañana le dice a tu reloj interno que es hora de estar despierto. Casi todo lo que funciona va de proteger tu sueño de esa señal.",
     ],
     "sections": [
@@ -151,7 +151,7 @@ DORMIR = {
         },
     ],
     "faq": [
-        ("¿Cuántas horas tengo que dormir después del turno de noche?", "Las mismas que necesitas cualquier otro día, que en la mayoría de los adultos son entre 7 y 9. Si no llegas de una vez, completa con una siesta por la tarde."),
+        ("¿Cuántas horas tengo que dormir después del turno de noche?", "Las mismas que necesitas cualquier otro día. Si no llegas de una vez, completa con una siesta por la tarde."),
         ("¿Por qué me despierto a las pocas horas de acostarme?", "Porque a media mañana tu reloj interno empuja hacia la vigilia. La oscuridad total, el silencio y no tomar cafeína en las 6 horas anteriores ayudan a mantener el sueño."),
         ("¿Es malo dormir de día?", "Dormir de día cuesta más porque va contra el reloj interno, pero se puede dormir bien si cuidas la luz al volver, la oscuridad del cuarto y un horario fijo."),
         ("¿Me conviene una siesta antes del turno de noche?", "Sí, sobre todo antes de la primera noche. Una siesta por la tarde reduce el cansancio con el que empiezas el turno."),
