@@ -23,6 +23,7 @@ ES = {
         ("Viajes y tripulaciones", [
             ("Artículo", "Jet lag: cómo recuperarte", "Síntomas, por qué cuesta más volar al este y qué hacer con la luz, la comida y el café.", "/jet-lag/", None),
             ("Artículo", "Qué comer antes de un vuelo largo", "Qué llevar al avión y cómo evitar la hinchazón, las piernas pesadas y el estreñimiento.", "/que-comer-antes-de-un-vuelo-largo/", None),
+            ("Artículo", "TCP de corto radio: qué comer", "El desayuno cuando firmas a las 5:00, qué llevar para varios saltos y cómo encadenar madrugones.", "/tcp-corto-radio-que-comer/", None),
             ("Guía gratuita", "Guía para tripulaciones de largo radio", "Jet lag, comida a bordo, sueño y analíticas para escalas de 24 a 72 horas.", "/tripulaciones/", "/assets/guias/portada-guia-tripulaciones.webp|contain"),
         ]),
         ("Consulta online en tu ciudad", [

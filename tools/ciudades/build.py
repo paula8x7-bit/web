@@ -93,7 +93,7 @@ def texts(lang, slug, city, centros, crew):
                 ("Plan personalizado", "Desde 69 €", "Tu plan hecho a partir de mi cuestionario, tus gustos y tu analítica. Sin videollamada."),
                 ("Con videollamada", "Desde 75 €", "Consulta inicial, seguimiento mensual y seguimiento clínico para casos complejos."),
             ],
-            "crew": (f"¿Eres TCP o piloto con base en {city}? Tienes una <a href=\"/tripulaciones/\">guía gratuita para tripulaciones de largo radio</a>." if crew else ""),
+            "crew": (f"¿Eres TCP o piloto con base en {city}? Tienes una <a href=\"/tripulaciones/\">guía gratuita para tripulaciones de largo radio</a> y, si vuelas en corto radio, <a href=\"/tcp-corto-radio-que-comer/\">qué comer con madrugones y varios saltos</a>." if crew else ""),
             "cta": "Reserva tu cita", "cta2": ("Ver guías y artículos", "/guias/"),
             "faq_h": "Preguntas frecuentes",
             "faq": [

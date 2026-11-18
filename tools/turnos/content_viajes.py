@@ -419,3 +419,105 @@ MEALPREP_EN = {
         "cta_note": JETLAG_EN["cta"]["cta_note"].replace("web-jet-lag-en", "web-crew-meal-prep").replace("diagnoseum-jet-lag-en", "diagnoseum-crew-meal-prep"),
     },
 }
+
+# Tripulaciones de corto radio (madrugones, varios saltos, sin escala).
+SRC_VIAJES.update({
+    "arsintescu": ("Arsintescu L y cols. Early starts and late finishes both reduce alertness and performance among short-haul airline pilots. Journal of Sleep Research, 2021.", "https://doi.org/10.1111/jsr.13521"),
+    "akerstedt": ("Åkerstedt T y cols. Acute and cumulative effects of scheduling on aircrew fatigue in ultra-short-haul operations. Journal of Sleep Research, 2021.", "https://doi.org/10.1111/jsr.13305"),
+    "steven": ("Steven D y cols. Additive effects of time awake and number of flights on fatigue in short-haul pilots. Journal of Sleep Research, 2026.", "https://doi.org/10.1111/jsr.70473"),
+    "vejvoda": ("Vejvoda M y cols. Significance of time awake for predicting pilots' fatigue on short-haul flights. Journal of Sleep Research, 2014.", "https://doi.org/10.1111/jsr.12186"),
+})
+
+CORTO = {
+    "path": "/tcp-corto-radio-que-comer/",
+    "trail": [],
+    "title": "TCP de corto radio: qué comer con madrugones y varios saltos",
+    "desc": "Qué comer si eres TCP de corto radio: el desayuno cuando entras a las 5:00, qué llevar para cuatro saltos sin tiempo de sentarte, la cafeína y cómo dormir con los madrugones. De una sobrecargo nutricionista.",
+    "eyebrow": "Tripulaciones · Corto radio",
+    "h1": "TCP de corto radio: qué comer con madrugones y varios saltos",
+    "lead": "Firmas de madrugada, cuatro saltos seguidos, rotaciones de media hora y vuelta a base. Así se organiza la comida para llegar entero al último tramo.",
+    "intro": [
+        "Soy nutricionista y sobrecargo. En corto radio casi nunca se hace noche fuera: el reto es otro. Te levantas a las 3:30, desayunas a deshoras, en las rotaciones no hay tiempo de sentarse y a bordo solo hay lo que se vende.",
+        "Esto es lo que dicen los estudios con tripulaciones de corto radio y cómo lo llevaría a tu bolsa.",
+    ],
+    "sections": [
+        {
+            "h2": "Por qué los madrugones pasan factura",
+            "ps": [
+                "En un estudio con 95 pilotos de corto radio, la noche antes de una firma temprana dormían de media una hora y media menos que antes de una salida de tarde, y empezaban el día más cansados.[arsintescu]",
+                "Y se acumula. En otro estudio con tripulaciones (entre ellos, TCP), cuantas más firmas muy tempranas había en la semana, más cansancio arrastraban, y cada hora de sueño de más lo reducía.[akerstedt]",
+                "Los saltos también suman: con cuatro vuelos en el día, el cansancio llegaba a su punto crítico más de dos horas antes que con uno solo.[steven]",
+            ],
+        },
+        {
+            "h2": "Antes de firmar: un desayuno ligero",
+            "ps": [
+                "Si firmas a las 5:00, para tu cuerpo sigue siendo de noche: entre las 00:00 y las 6:00 toca algo pequeño y fácil de digerir. En un estudio de turnos de noche, a esas horas rendían mejor quienes tomaban algo ligero que quienes hacían una comida completa o no comían nada.[gupta]",
+                "Lo importante es no salir de casa en ayunas y con el estómago lleno de café.",
+            ],
+            "list_h": "Ideas para ese primer desayuno",
+            "list": [
+                "Un yogur natural o kéfir con fruta.",
+                "Una tostada de pan de masa madre con aceite de oliva y tomate.",
+                "Un vaso de leche o de bebida vegetal con unos frutos secos.",
+                "Un huevo cocido, preparado la noche antes.",
+            ],
+        },
+        {
+            "h2": "En la bolsa: comida para comer de pie",
+            "ps": [
+                "En las rotaciones cortas no te vas a sentar. Lleva cosas que se coman en dos minutos, sin cubiertos y sin microondas, y repártelas entre los saltos en lugar de esperar al final.",
+                "Cuando haya un tramo más largo o una rotación con algo más de margen, ahí va la comida principal: un táper preparado en casa.",
+            ],
+            "list_h": "Lo que cabe en la bolsa",
+            "list": [
+                "Huevos cocidos.",
+                "Bastones de zanahoria, pepino y pimiento, con hummus.",
+                "Fruta entera: plátano, manzana, mandarinas.",
+                "Un puñado de frutos secos.",
+                "Un táper con arroz o patata, verdura y proteína (pollo, pescado, legumbre o tortilla).",
+                "Queso curado o latas pequeñas de atún o sardinas.",
+            ],
+        },
+        {
+            "h2": "Agua entre salto y salto",
+            "ps": [
+                "El aire de cabina es muy seco.[martingill] Con las prisas de las rotaciones es fácil pasar horas sin beber: lleva tu botella y bebe un poco en cada tramo, sin esperar a tener sed.",
+            ],
+        },
+        {
+            "h2": "Cafeína: al principio del día",
+            "ps": [
+                "El café ayuda en la primera mitad de la jornada, pero tarda horas en irse: tomado incluso 6 horas antes de dormir, ya recorta el sueño.[drake]",
+                "Si mañana vuelves a madrugar, el café de media tarde te va a quitar justo las horas que necesitas. Tómalo pronto, poco a poco, y nada en las 6 horas antes de acostarte.",
+            ],
+        },
+        {
+            "h2": "Al llegar a casa: comida normal y a por la noche siguiente",
+            "ps": [
+                "Si terminas a mediodía, haz una comida completa, como un día cualquiera. Así no llegas a la noche picando.",
+                "Si al día siguiente vuelves a firmar temprano, adelanta la cena y la hora de acostarte. Lo que más protege de los madrugones encadenados es sumar horas de sueño.[akerstedt]",
+            ],
+        },
+        {
+            "h2": "Si tu turno es de tarde y acabas de madrugada",
+            "ps": [
+                "Las salidas de tarde parecen más fáciles, pero al final de la jornada se acumulan muchas horas despierto, y el cansancio al aterrizar es mayor que en las firmas tempranas.[vejvoda]",
+                "Haz la comida principal antes de firmar, algo ligero en los saltos de la noche y, al llegar a casa, solo algo pequeño antes de dormir.",
+            ],
+        },
+    ],
+    "faq": [
+        ("¿Qué desayunar si entro a trabajar a las 5 de la mañana?", "Algo ligero y fácil de digerir: un yogur o kéfir con fruta, una tostada con aceite de oliva o un vaso de leche con frutos secos. A esa hora tu cuerpo sigue en su noche biológica."),
+        ("¿Qué comer en un día de varios saltos sin tiempo de sentarse?", "Cosas que se comen en dos minutos y sin cubiertos, como huevos cocidos, fruta, frutos secos o verdura en bastones con hummus, repartidas entre los saltos. La comida principal, en el tramo o la rotación con más margen."),
+        ("¿Cuándo dejar el café si madrugo al día siguiente?", "Tómalo en la primera mitad de la jornada y deja al menos 6 horas sin cafeína antes de acostarte."),
+        ("¿Por qué estoy tan cansado después de varios días de madrugones?", "Porque antes de una firma temprana se duerme menos, y esa falta de sueño se va sumando a lo largo de la semana. Adelantar la cena y la hora de acostarte es lo que más ayuda."),
+    ],
+    "sources": ["arsintescu", "akerstedt", "steven", "gupta", "martingill", "drake", "vejvoda"],
+    "cta": {
+        "cta_h": "¿Vuelas en corto radio?",
+        "cta_p": "En consulta preparamos tu plan según tu programación: qué comer en cada tipo de firma, cómo encadenar madrugones y cómo recuperar en tus libres. Online, en castellano o en inglés.",
+        "cta_b2": ("Ver todas las guías", "/guias/"),
+        "cta_note": JETLAG["cta"]["cta_note"].replace("web-jet-lag", "web-corto-radio").replace("diagnoseum-jet-lag", "diagnoseum-corto-radio"),
+    },
+}
