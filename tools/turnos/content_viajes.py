@@ -45,7 +45,7 @@ JETLAG = {
             "h2": "En el avión: vive ya en la hora de destino",
             "ps": [
                 "En cuanto subas, pon el reloj en la hora del destino y organízate según esa hora. Si allí es de noche, intenta dormir: antifaz, tapones y nada de pantallas. Si allí es de día, aguanta despierto, aunque sea con alguna siesta corta.",
-                "Bebe agua durante todo el vuelo y ve con cuidado con el alcohol, que empeora el sueño.",
+                "Bebe agua durante todo el vuelo y nada de alcohol. Te ayuda a dormirte, pero rompe la segunda mitad de la noche: más despertares y menos sueño REM.[ebrahim] Incluso en poca cantidad, el cuerpo se recupera peor mientras duermes.[pietila] Y no hay una cantidad saludable: en el mayor análisis mundial, la cantidad de alcohol que menos daño hacía a la salud era cero.[gbd]",
             ],
         },
         {
@@ -59,7 +59,7 @@ JETLAG = {
                 "Si llego por la mañana, un desayuno de verdad: huevos, fruta, pan, yogur.",
                 "Comida y cena a la hora local, aunque sea algo pequeño.",
                 "Cenas ligeras las primeras noches, para dormir mejor.",
-                "Agua durante todo el día y poco alcohol.",
+                "Agua durante todo el día y nada de alcohol.",
             ],
         },
         {
@@ -87,11 +87,11 @@ JETLAG = {
     "faq": [
         ("¿Cuánto dura el jet lag?", "Depende de cuántos husos horarios cruces y de la dirección. Hacia el este suele durar más que hacia el oeste, y cuantos más husos, más días tarda el cuerpo en ponerse en hora."),
         ("¿Cómo evitar el jet lag de forma natural?", "Empieza a mover tu horario unos días antes, vive en la hora de destino desde que subes al avión, come y duerme a la hora local, busca luz de día y deja el café para la primera parte del día."),
-        ("¿Qué comer para el jet lag?", "No hay alimentos milagro, pero sí importa el horario: come a las horas del destino desde el primer día, con cenas ligeras las primeras noches, agua de sobra y poco alcohol."),
+        ("¿Qué comer para el jet lag?", "No hay alimentos milagro, pero sí importa el horario: come a las horas del destino desde el primer día, con cenas ligeras las primeras noches, agua de sobra y nada de alcohol."),
         ("¿Qué síntomas tiene el jet lag?", "Dormir mal, cansancio durante el día, rendir menos, problemas de digestión y malestar general."),
         ("¿Funciona la melatonina para el jet lag?", "Es lo que más evidencia tiene, sobre todo en vuelos de cinco o más husos hacia el este, tomada cerca de la hora de acostarse en el destino. Antes de tomarla, consúltalo con un profesional."),
     ],
-    "sources": ["herxbmj", "burgess", "wehrens", "drake", "cochrane"],
+    "sources": ["herxbmj", "burgess", "ebrahim", "pietila", "gbd", "wehrens", "drake", "cochrane"],
     "cta": {
         "cta_h": "¿Viajas mucho por trabajo?",
         "cta_p": "En consulta preparamos tu plan para cada viaje: horarios de sueño, luz y comidas según tus rutas, con tus síntomas y tus analíticas delante. Online, en castellano o en inglés.",
