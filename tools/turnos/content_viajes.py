@@ -73,7 +73,7 @@ JETLAG = {
             "h2": "¿Y la melatonina?",
             "ps": [
                 "Es lo que más evidencia tiene. En la revisión Cochrane, nueve de diez ensayos encontraron que tomar melatonina cerca de la hora de acostarse en el destino (entre las 22:00 y las 24:00) reducía el jet lag en vuelos de cinco o más husos horarios, sobre todo hacia el este.[cochrane]",
-                "Dosis de entre 0,5 y 5 mg funcionaron parecido. Tomarla a la hora equivocada, temprano por el día, puede retrasar la adaptación. Si tienes epilepsia o tomas anticoagulantes como la warfarina, consúltalo antes con tu médico.[cochrane]",
+                "Eso sí, la hora importa: tomada temprano por el día, puede retrasar la adaptación. Si te la planteas, consúltalo antes con un profesional, sobre todo si tienes epilepsia o tomas anticoagulantes como la warfarina.[cochrane]",
             ],
         },
         {
@@ -89,7 +89,7 @@ JETLAG = {
         ("¿Cómo evitar el jet lag de forma natural?", "Empieza a mover tu horario unos días antes, vive en la hora de destino desde que subes al avión, come y duerme a la hora local, busca luz de día y deja el café para la primera parte del día."),
         ("¿Qué comer para el jet lag?", "No hay alimentos milagro, pero sí importa el horario: come a las horas del destino desde el primer día, con cenas ligeras las primeras noches, agua de sobra y poco alcohol."),
         ("¿Qué síntomas tiene el jet lag?", "Dormir mal, cansancio durante el día, rendir menos, problemas de digestión y malestar general."),
-        ("¿Funciona la melatonina para el jet lag?", "Es lo que más evidencia tiene, sobre todo en vuelos de cinco o más husos hacia el este, tomada cerca de la hora de acostarse en el destino. Si tomas medicación, consúltalo antes con tu médico."),
+        ("¿Funciona la melatonina para el jet lag?", "Es lo que más evidencia tiene, sobre todo en vuelos de cinco o más husos hacia el este, tomada cerca de la hora de acostarse en el destino. Antes de tomarla, consúltalo con un profesional."),
     ],
     "sources": ["herxbmj", "burgess", "wehrens", "drake", "cochrane"],
     "cta": {
