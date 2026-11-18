@@ -126,6 +126,9 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/how-to-sleep-after-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/"/>
   </url>
   <url>
     <loc>https://paularubionutricionista.com/en/what-to-eat-on-night-shift/</loc>
@@ -153,5 +156,14 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/guias/"/>
+  </url>
+  <url>
+    <loc>https://paularubionutricionista.com/en/how-to-sleep-after-night-shift/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paularubionutricionista.com/en/how-to-sleep-after-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paularubionutricionista.com/turnos/como-dormir-despues-del-turno-de-noche/"/>
   </url>
 </urlset>

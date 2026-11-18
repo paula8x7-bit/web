@@ -105,6 +105,7 @@ EAT_EN = {
             "h2": "Your days off",
             "ps": [
                 "On your days off, go back to eating at daytime hours and use them to shop and prep for the next block of nights. Reviews on meal timing for shift workers agree: eat less at night and be choosy about what you eat.[phoi]",
+                "For the other half, here is <a href=\"/en/how-to-sleep-after-night-shift/\">how to sleep after a night shift</a>.",
             ],
         },
     ],
@@ -116,4 +117,69 @@ EAT_EN = {
         ("When should I stop caffeine on a night shift?", "Have it in the first half of your shift and leave at least 6 hours without caffeine before you go to sleep."),
     ],
     "sources": ["chellappa", "grant", "grosser", "gupta", "drake", "sun", "zhang", "phoi"],
+}
+
+SLEEP_EN = {
+    "lang": "en",
+    "path": "/en/how-to-sleep-after-night-shift/",
+    "alt": "/turnos/como-dormir-despues-del-turno-de-noche/",
+    "title": "How to sleep after a night shift (and actually sleep)",
+    "desc": "What to do after a night shift to sleep during the day: light, darkness, a fixed bedtime, caffeine and food. Based on research, from a nutritionist who works nights.",
+    "eyebrow": "Night shift · Sleep",
+    "h1": "How to sleep after a night shift",
+    "lead": "What you do between leaving work and getting into bed matters as much as how many hours you sleep.",
+    "intro": [
+        "You get home exhausted and still can't drop off, or you wake up three hours later. It happens to me too after a night flight.",
+        "Morning light tells your internal clock it's time to be awake. Almost everything that works is about protecting your sleep from that signal.",
+    ],
+    "sections": [
+        {
+            "h2": "On the way home: sunglasses",
+            "ps": [
+                "In a classic study with night workers, wearing very dark glasses on the way home in the morning helped the internal clock adapt, and the people who adapted most slept better during the day and felt less tired.[eastman]",
+                "Put on dark sunglasses as soon as you leave, even if it's cloudy. And if you can, skip the errands on the way home.",
+            ],
+        },
+        {
+            "h2": "Make your bedroom a cave",
+            "ps": [
+                "Total darkness: blinds down, blackout curtains or an eye mask. In the studies that worked best, people slept in completely dark rooms.[smith]",
+                "Cool, quiet and with your phone out of reach. If your house is noisy, earplugs or white noise help a lot.",
+            ],
+        },
+        {
+            "h2": "A fixed time for daytime sleep",
+            "ps": [
+                "Try to go to bed at the same time after every night shift and sleep in one block rather than in bits. It's easier for your body when it knows what's coming.",
+                "When you get up, go outside for a while in the afternoon. That light keeps your clock from drifting too far, so you can still sleep at night on your days off.[smith]",
+            ],
+        },
+        {
+            "h2": "Caffeine and food before bed",
+            "ps": [
+                "No caffeine in the 6 hours before sleep.[drake] If you have a coffee at 5am and go to bed at 9am, you'll struggle.",
+                "Go to bed neither hungry nor full: a yoghurt or a slice of toast is enough. I go into detail in <a href=\"/en/what-to-eat-on-night-shift/\">what to eat on night shift</a>.",
+                "And skip the alcohol. It helps you drop off, but it makes the second half of your sleep worse.",
+            ],
+        },
+        {
+            "h2": "Before your first night: a nap",
+            "ps": [
+                "An afternoon nap before your first night shift cuts the sleep debt you start with. It's one of the standard recommendations for healthcare staff, yet in a survey of junior doctors in the north west of England, 65% didn't take one before their nights.[jackson]",
+            ],
+        },
+        {
+            "h2": "Your days off",
+            "ps": [
+                "You don't need to switch straight back to a daytime schedule. Going to bed late and getting up late on your first days off leaves you halfway, and the next block of nights is easier.[smith]",
+            ],
+        },
+    ],
+    "faq": [
+        ("How many hours should I sleep after a night shift?", "The same as you need on any other day, which for most adults is between 7 and 9. If you can't get them in one go, top up with an afternoon nap."),
+        ("Why do I wake up a few hours after going to bed?", "Because by mid morning your internal clock is pushing you to be awake. Total darkness, quiet and no caffeine in the 6 hours before bed help you stay asleep."),
+        ("Is it bad to sleep during the day?", "Sleeping during the day is harder because it goes against your internal clock, but you can sleep well if you look after the light on the way home, the darkness of your room and a fixed bedtime."),
+        ("Should I nap before a night shift?", "Yes, especially before your first night. An afternoon nap reduces the tiredness you start your shift with."),
+    ],
+    "sources": ["eastman", "smith", "drake", "jackson"],
 }

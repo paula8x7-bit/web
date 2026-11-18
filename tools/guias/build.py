@@ -46,6 +46,7 @@ EN = {
     "sections": [
         ("Night shift", [
             ("Article", "What to eat on night shift", "Before, during and after, with an eating schedule and meal prep ideas.", "/en/what-to-eat-on-night-shift/", None),
+            ("Article", "How to sleep after a night shift", "Light, darkness, a fixed bedtime and caffeine to sleep during the day.", "/en/how-to-sleep-after-night-shift/", None),
         ]),
         ("Cabin crew", [
             ("Free guide", "Guide for long haul cabin crew", "Jet lag, food on board, sleep and blood tests for 24 to 72 hour layovers.", "/en/cabin-crew/", "/assets/guias/cabin-crew-guide-cover.webp|contain"),
