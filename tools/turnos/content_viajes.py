@@ -267,7 +267,7 @@ VUELO = {
             ],
             "list_h": "Lo que cabe en la bolsa",
             "list": [
-                "Huevos cocidos.",
+                "Huevos cocidos y latas pequeñas de sardinas o caballa.",
                 "Zanahoria, pepino y pimiento en bastones.",
                 "Verdura asada con boniato o quinoa en un táper.",
                 "Frutos secos y un aguacate.",
@@ -275,7 +275,7 @@ VUELO = {
                 "Fruta entera.",
                 "Bolsitas de manzanilla, rooibos o jengibre, para pedir agua caliente a bordo.",
             ],
-            "after": "Ojo con dos cosas. El yogur, el kéfir, las cremas y los caldos cuentan como líquidos en el control de seguridad, así que cómpralos después. Y Estados Unidos, Australia o Japón restringen la fruta, la verdura y la carne frescas: lo que sobre, cómelo antes de aterrizar o tíralo en el avión.",
+            "after": "Ojo con dos cosas. Lo que se puede pasar por el control de seguridad depende de cada aeropuerto: algunos, como varios de Londres, ya permiten llevar más líquido. Si llevas yogur, kéfir o caldo, confírmalo antes con la seguridad del aeropuerto. Y Estados Unidos, Australia o Japón restringen la fruta, la verdura y la carne frescas: lo que sobre, cómelo antes de aterrizar o tíralo en el avión.",
         },
         {
             "h2": "Agua, a sorbos",
@@ -304,7 +304,7 @@ VUELO = {
     "faq": [
         ("¿Qué es mejor comer antes de un vuelo largo?", "Una comida completa y fácil de digerir antes de ir al aeropuerto: proteína, verdura cocinada y una ración de hidrato, como pescado con patata y judías verdes."),
         ("¿Qué no comer antes de volar?", "El día del vuelo, mejor reducir las legumbres y las crucíferas crudas, y evitar las bebidas con gas y el chicle: en cabina los gases ocupan más y la digestión es más lenta."),
-        ("¿Qué llevar para comer en el avión?", "Huevos cocidos, verdura en bastones o asada en un táper, frutos secos, pan de masa madre y fruta entera. El yogur y los caldos, cómpralos después del control de seguridad."),
+        ("¿Qué llevar para comer en el avión?", "Huevos cocidos, latas pequeñas de sardinas o caballa, verdura en bastones o asada en un táper, frutos secos, pan de masa madre y fruta entera. Para los líquidos, como el yogur o el caldo, confirma antes las normas de seguridad de tu aeropuerto."),
         ("¿Por qué se me hinchan las piernas en el avión?", "Sobre todo por pasar muchas horas sentado. Levantarte, pasear y mover los tobillos ayuda, y las medias de compresión también pueden ayudar."),
         ("¿Por qué me estriño cuando viajo?", "Por el cambio de horarios, beber menos, estar sentado y comer distinto. Agua, fruta como el kiwi, verdura y movimiento son lo que mejor funciona."),
     ],
