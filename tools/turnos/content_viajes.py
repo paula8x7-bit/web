@@ -313,3 +313,109 @@ VUELO = {
 }
 
 VUELO["cta"] = JETLAG["cta"]
+
+_LINK = "style='color:#5e1a24;border-bottom:1px solid #c9b578'"
+
+MEALPREP_EN = {
+    "lang": "en",
+    "path": "/en/cabin-crew-meal-prep/",
+    "trail": [("Cabin crew guide", "/en/cabin-crew/")],
+    "title": "Cabin crew meal prep: what flight attendants eat on long haul flights",
+    "desc": "Cabin crew meal prep ideas from a long haul Inflight Manager and nutritionist: what to cook before a trip, what to pack, and what to eat on a night flight.",
+    "eyebrow": "Cabin crew · Food",
+    "h1": "Cabin crew meal prep",
+    "lead": "What to cook before a trip, what to pack, and what to eat on a long haul night flight.",
+    "intro": [
+        "I'm a nutritionist and a long haul Inflight Manager. I fly the same trips you do, and I know what it's like to sleep in crew rest, do back-to-back 24 hour layovers and eat dinner at odd hours after the service.",
+        "Most crew meal prep tips are on social media. Here is how I sort it out, with the research behind it.",
+    ],
+    "sections": [
+        {
+            "h2": "The rule behind it: eat by your home clock",
+            "ps": [
+                "On layovers under 48 hours, eat on home time, not local time. Midnight to 6:00 home time is your biological night, wherever you are.",
+                "Eating during your biological night is harder on your body: in a Harvard study of simulated night work, eating at night made blood sugar control worse.[chellappa] So if you eat during those hours, keep it light and easy to digest: broth, eggs, yoghurt, cooked vegetables, rice or potato.",
+                "Something small works better than a big meal. In an Australian study, people who had a snack in the early hours performed better at 4am than those who had a full meal or nothing at all.[gupta]",
+            ],
+        },
+        {
+            "h2": "Before you leave",
+            "ps": [
+                "If you're flying overnight, have a 2 to 3 hour nap beforehand. Have a proper meal, with carbs, before you head to the airport. If dinner is more than 6 hours away, pack a snack.",
+            ],
+        },
+        {
+            "h2": "Dinner on a night flight",
+            "ps": [
+                "You take off at 8 or 9 in the evening and dinner comes after the service. It's your main meal, but keep it easy to digest: protein, cooked vegetables and a small portion of carbs.",
+            ],
+            "list_h": "Three ways to sort it out",
+            "list": [
+                "<strong>From home:</strong> a container with chicken, fish or eggs, roasted or boiled vegetables and your portion of carbs. Heat it up in the aircraft oven and carry it in a cool bag, in glass or steel. Don't use foil trays.",
+                "<strong>From the airport:</strong> a salad or vegetables you can heat up, roast chicken or salmon, boiled eggs or plain yoghurt. Watch out for ready-made rice and potatoes: your carbs are best brought from home.",
+                "<strong>On board:</strong> take protein and vegetables from the crew meal, add your own carbs if you've brought them, start with the protein and keep sauces on the side. Skip the white bread, pastries and desserts.",
+            ],
+        },
+        {
+            "h2": "Batch cook on your days off",
+            "ps": [
+                "One cooking session at home covers the trip: roast a tray of vegetables, cook some sweet potato or quinoa, boil a few eggs and portion out the protein.",
+            ],
+            "list_h": "Carbs that travel well",
+            "list": [
+                "Sourdough bread.",
+                "Corn cakes.",
+                "Boiled potato.",
+                "Roast sweet potato or cooked quinoa.",
+                "Oats, for breakfast down route.",
+            ],
+        },
+        {
+            "h2": "What I pack",
+            "ps": [
+                "A small cool bag covers the flight and your first meal down route. This is the list I use.",
+            ],
+            "list_h": "In my cool bag",
+            "list": [
+                "Boiled eggs and small tins of sardines or mackerel.",
+                "Greek yoghurt or kefir for the flight.",
+                "Carrot, cucumber and pepper sticks.",
+                "Roasted vegetables in a container: they're the hardest thing to find on a layover.",
+                "Nuts, seeds and an avocado.",
+                "Whole fruit.",
+                "Chamomile, rooibos or ginger tea, and powdered stock or bone broth for when you land late.",
+                "A glass or steel container, cutlery and a large bottle.",
+            ],
+            "after": "Watch out at customs: the US, Australia and Japan restrict fresh fruit, vegetables and meat. Eat whatever's left before landing or bin it on the aircraft. And what you can take through security depends on the airport, so check with them if you're carrying liquids like yoghurt or broth.",
+        },
+        {
+            "h2": "On board",
+            "ps": [
+                "On flying days, cut down on pulses and raw cruciferous vegetables, and avoid fizzy drinks and chewing gum. At cabin altitude gas expands and digestion slows down: in studies at in-flight cabin pressure, a fibre-rich meal emptied from the stomach more slowly and left people feeling heavy.[hinning]",
+                "Cabin air is very dry.[martingill] Sip water regularly; don't wait until you're thirsty. Use spices, herbs, lemon and tomato to add flavour instead of reaching for sugar.",
+                "In the galley, do calf raises, short squats and hip stretches every hour. Sitting is what makes your legs swell: in a study of 10 hours in aircraft seats, lower leg volume had already gone up after 4 hours.[mitter]",
+            ],
+        },
+        {
+            "h2": "Eating out down route",
+            "ps": [
+                "The plate is the same everywhere: protein, vegetables and a small portion of carbs. Wherever you are, order grilled protein, a double portion of vegetables and the sauce on the side.",
+                "In the US and Canada, make the most of the supermarket: rotisserie chicken, salads, Greek yoghurt, eggs and berries. In Europe, watch out for late dinners: they fall in your biological night.",
+                "There's much more on sleep, jet lag, caffeine and blood tests in my <a href='/en/cabin-crew/' " + _LINK + ">free guide for long haul crew</a>.",
+            ],
+        },
+    ],
+    "faq": [
+        ("What do flight attendants eat on long haul flights?", "Many bring their own food. On a night flight, the main meal after the service should be easy to digest: protein, cooked vegetables and a small portion of carbs, with something light during your biological night."),
+        ("Can cabin crew bring their own food on board?", "Most do. Carry it in a cool bag, in a glass or steel container, and check your airline's rules for heating it up and the customs rules at your destination."),
+        ("What are good cabin crew meal prep ideas?", "Roasted vegetables, boiled eggs, chicken or fish, and carbs that travel well, like sourdough bread, boiled potato, roast sweet potato or quinoa. Add nuts, whole fruit and Greek yoghurt for the flight."),
+        ("What should I eat on a night flight as crew?", "Have a proper meal before you leave, keep dinner after the service easy to digest, and between midnight and 6:00 home time only eat something light, like broth, eggs or yoghurt."),
+    ],
+    "sources": ["chellappa", "gupta", "hinning", "martingill", "mitter"],
+    "cta": {
+        "cta_h": "Want a meal plan built around your roster?",
+        "cta_p": "I'll put together a meal plan for home, the airport and on board, with your real schedules and the food you like. Online, in English or Spanish.",
+        "cta_b2": ("Cabin crew guide", "/en/cabin-crew/"),
+        "cta_note": JETLAG_EN["cta"]["cta_note"].replace("web-jet-lag-en", "web-crew-meal-prep").replace("diagnoseum-jet-lag-en", "diagnoseum-crew-meal-prep"),
+    },
+}
