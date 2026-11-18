@@ -66,10 +66,9 @@ Hecho:
 3. Turnos en inglés: `/en/what-to-eat-on-night-shift/` y `/en/how-to-sleep-after-night-shift/` (gemelas de los artículos en castellano). Falta una página general de turnos en inglés.
 4a. Jet lag: `/jet-lag/` y `/en/jet-lag/` (para viajeros; aviso para TCP con escalas cortas y la regla de las 48 horas).
 4b. «Qué comer antes de un vuelo largo»: `/que-comer-antes-de-un-vuelo-largo/` (líquidos en el control: depende de cada aeropuerto, remitir a confirmarlo con su seguridad).
+4c. «Cabin crew meal prep»: `/en/cabin-crew-meal-prep/` (a partir de la guía en inglés).
 
 Siguiente, por orden:
-4. **Artículos de tripulaciones**:
-   - «Cabin crew meal prep» en inglés (flight attendant meal prep ideas, what do flight attendants eat on long haul flights). Hoy solo hay blogs y redes sociales: hueco claro.
 5. **Ciudades**: «nutricionista integrativa online en {ciudad}» (Madrid, Barcelona, Valencia, Sevilla, Bilbao, Zaragoza, Málaga, Alicante, Granada, Valladolid, Oviedo, Gijón). Cada una con contenido local real (los laboratorios de Diagnoseum de esa ciudad) para que no sean páginas copiadas.
 6. Escalada, si Paula quiere esos clientes.
 
