@@ -83,6 +83,7 @@ COMER = {
             "h2": "Los días libres",
             "ps": [
                 "Cuando libras, vuelve a comer a horas de día y aprovecha para hacer la compra y dejar cosas preparadas. Las revisiones sobre crononutrición coinciden en lo mismo: reducir lo que se come de noche y cuidar qué se elige.[phoi]",
+                "Si te viene mejor partir de un menú ya hecho, en mis <a href=\"/planes/\">planes de 4 semanas</a> tienes las comidas de cada día, las recetas y la lista de la compra.",
                 "Si quieres saber cómo dormir mejor después del turno, aquí tienes la otra parte: <a href=\"/turnos/como-dormir-despues-del-turno-de-noche/\">cómo dormir después de un turno de noche</a>.",
             ],
         },
@@ -133,7 +134,7 @@ DORMIR = {
             "h2": "Café y comida antes de acostarte",
             "ps": [
                 "Nada de cafeína en las 6 horas antes de dormir.[drake] Si tomas café a las cinco de la mañana y te acuestas a las nueve, te va a costar.",
-                "Llega a la cama sin hambre, pero sin una comida pesada: un yogur o una tostada bastan. Te lo explico con detalle en <a href=\"/turnos/que-comer-en-el-turno-de-noche/\">qué comer en el turno de noche</a>.",
+                "Llega a la cama sin hambre, pero sin una comida pesada: un yogur o una tostada bastan. Si te apetece algo calentito, una <a href=\"/recetas/golden-milk-con-azafran/\">golden milk con azafrán</a>, que no lleva cafeína. Te lo explico con detalle en <a href=\"/turnos/que-comer-en-el-turno-de-noche/\">qué comer en el turno de noche</a>.",
                 "Y el alcohol, en realidad, no ayuda a dormir.[ebrahim]",
             ],
         },

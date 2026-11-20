@@ -457,7 +457,7 @@ CORTO = {
         {
             "h2": "Organízate en tus libres",
             "ps": [
-                "Con cinco días seguidos de rotaciones, si no llevas la comida hecha, acabas tirando de sándwich o de fideos instantáneos. Lo que mejor funciona es cocinar una o dos veces en los libres y dejarlo en raciones.",
+                "Con cinco días seguidos de rotaciones, si no llevas la comida hecha, acabas tirando de sándwich o de fideos instantáneos. Lo que mejor funciona es cocinar una o dos veces en los libres y dejarlo en raciones. Si te viene mejor partir de un menú ya hecho, en mis <a href=\"/planes/\">planes de 4 semanas</a> tienes las comidas de cada día, las recetas y la lista de la compra.",
                 "Prepara cada noche la bolsa del día siguiente: el desayuno, lo que vas a picar entre saltos y la comida principal. A las 3:30 nadie decide bien qué llevarse.",
                 "Si la comida la vas a calentar en el horno del avión, llévala en un recipiente apto para horno.",
             ],
