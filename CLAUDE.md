@@ -91,10 +91,10 @@ Hecho:
 4b. «Qué comer antes de un vuelo largo»: `/que-comer-antes-de-un-vuelo-largo/` (líquidos en el control: depende de cada aeropuerto, remitir a confirmarlo con su seguridad).
 4c. «Cabin crew meal prep»: `/en/cabin-crew-meal-prep/` (a partir de la guía en inglés).
 4d. TCP de corto radio: `/tcp-corto-radio-que-comer/` y `/en/short-haul-cabin-crew-food/` (madrugones, varios saltos, electrolitos, agua del avión). Enlazado desde las páginas de Madrid y Barcelona.
-5a. Ciudades, primera tanda: Madrid, Barcelona, Vigo y Santander, en castellano y en inglés. Esperar a ver en Search Console si funcionan antes de hacer más.
+5a. Ciudades, primera tanda: Madrid, Barcelona, Vigo y Santander, en castellano y en inglés.
 
 Siguiente, por orden:
-5. **Ciudades**: «nutricionista integrativa online en {ciudad}» (Madrid, Barcelona, Valencia, Sevilla, Bilbao, Zaragoza, Málaga, Alicante, Granada, Valladolid, Oviedo, Gijón). Cada una con contenido local real (los laboratorios de Diagnoseum de esa ciudad) para que no sean páginas copiadas.
+5. **Ciudades**: «nutricionista integrativa online en {ciudad}». Una ciudad por semana, en castellano y en inglés, sin esperar a Search Console (decidido por Paula en noviembre de 2026). Pendientes, por orden: Valencia, Sevilla, Bilbao, Zaragoza, Málaga, Alicante, Granada, Valladolid, Oviedo, Gijón. Cada una con contenido local real (los laboratorios de Diagnoseum de esa ciudad) para que no sean páginas copiadas.
 6. Escalada, si Paula quiere esos clientes.
 
 Descartado: «dieta azafata 4 días» (busca dietas exprés para perder peso; no es su clienta).
